@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About EcoShine | Driven by Sustainability</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 50: '#fffbeb', 100: '#fef3c7', 200: '#fde68a', 300: '#fcd34d', 400: '#fbbf24', 500: '#fbbf24', 600: '#d97706', 700: '#b45309', 800: '#1f2937', 900: '#111827', 950: '#000000' },
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], outfit: ['Outfit', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-black text-emerald-950 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/10 dark:bg-black/10 backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-4 group">
+                <img src="assets/images/logo.png" alt="EcoShine Logo"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                <span class="text-3xl font-outfit font-black uppercase tracking-tighter dark:text-white">EcoShine</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-black uppercase tracking-widest">
+                <a href="index.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Home 1</a>
+                <a href="home2.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Home 2</a>
+                <a href="about.html" class="text-emerald-500">About</a>
+                <a href="services.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Services</a>
+                <a href="contact.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Contact</a>
+                <a href="dashboard.html"
+                    class="px-5 py-2.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-400 transition-all font-black">Dashboard</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle"
+                    class="p-2 rounded-full text-emerald-950 dark:text-white hover:bg-emerald-100 dark:hover:bg-emerald-800 transition-all">
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                </button>
+                <button id="rtl-toggle"
+                    class="p-2 text-[10px] font-black uppercase text-emerald-950 dark:text-white hover:text-emerald-500 transition-colors">RTL</button>
+                <a href="signup.html"
+                    class="px-6 py-2 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-widest rounded-full hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20">Sign
+                    Up</a>
+                <button id="menu-btn" class="lg:hidden p-2"><i data-lucide="menu" id="menu-icon"
+                        class="w-7 h-7"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- [1] Brand Hero -->
+        <section
+            class="relative min-h-[90vh] flex items-center pt-32 lg:pt-40 pb-20 bg-black text-white overflow-hidden transition-colors duration-500">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/about_hero.png" alt="Luxury Detailing"
+                    class="w-full h-full object-cover scale-110 grayscale-20 contrast-125">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-emerald-950/40"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 text-center space-y-8">
+                <div
+                    class="inline-block px-6 py-2 bg-emerald-500 text-emerald-950 text-xs font-black uppercase tracking-widest rounded-full shadow-2xl shadow-emerald-500/20">
+                    Our Story</div>
+                <h1
+                    class="text-6xl md:text-9xl font-outfit font-black uppercase tracking-tighter leading-[0.8] drop-shadow-2xl">
+                    Driven by <span class="text-emerald-500 italic">Clean,</span> <br>Powered by <span
+                        class="text-emerald-500 italic">Sustainability.</span></h1>
+                <p class="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto font-medium italic">EcoShine was born from
+                    a simple realization: luxury car care shouldn't come at the cost of our planet's most precious
+                    resource.</p>
+                <div class="pt-12 animate-bounce opacity-40"><i data-lucide="chevron-down"
+                        class="w-10 h-10 mx-auto"></i></div>
+            </div>
+        </section>
+
+        <!-- [2] Mission & Vision -->
+        <section class="py-32 bg-white dark:bg-black">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16">
+                <div
+                    class="p-16 bg-emerald-50 dark:bg-emerald-900/30 rounded-[3.5rem] space-y-6 flex flex-col justify-center border border-emerald-100 dark:border-emerald-800 group">
+                    <div class="w-full h-32 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/images/mission.png"
+                            class="w-full h-full object-cover grayscale-0 group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h2 class="text-4xl font-outfit font-black uppercase italic">Our Mission</h2>
+                    <p class="text-lg text-gray-500 dark:text-emerald-100/60 leading-relaxed">To deliver uncompromising,
+                        high-end car restoration services using advanced waterless technology that preserves millions of
+                        liters of water annually.</p>
+                </div>
+                <div
+                    class="p-16 bg-emerald-950 dark:bg-emerald-800/10 rounded-[3.5rem] space-y-6 flex flex-col justify-center text-white border border-emerald-800 group">
+                    <div class="w-full h-32 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/images/vision.png"
+                            class="w-full h-full object-cover grayscale-0 group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <h2 class="text-4xl font-outfit font-black uppercase italic text-emerald-500">Our Vision</h2>
+                    <p class="text-lg text-emerald-100/50 leading-relaxed">To lead the global transition toward
+                        sustainable vehicle maintenance, proving that the deepest shine can be achieved with zero
+                        environmental impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- [3] Our Story -->
+        <section class="py-32 bg-emerald-50 dark:bg-black relative overflow-hidden">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-emerald-500/10 rounded-[4rem]"></div>
+                    <img src="assets/images/innovation.png"
+                        class="relative z-10 rounded-[3rem] shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="space-y-8">
+                    <h2 class="text-5xl font-outfit font-black uppercase italic leading-none">The Spark Of <span
+                            class="text-emerald-500">Innovation</span></h2>
+                    <div class="space-y-6 text-gray-500 dark:text-emerald-100/60 text-lg leading-relaxed">
+                        <p>It started in 2024. Watching traditional car washes waste up to 200 liters of water per
+                            vehicle felt fundamentally disconnected from the future. We knew there was a better way to
+                            achieve a showroom finish.</p>
+                        <p>Collaborating with top-tier chemists, we pioneered a polymer-based restoration method that
+                            lifts dirt safely away from the paint, encapsulating it for a scratch-free removal. No
+                            hoses, no runoff, just perfection.</p>
+                        <p>Today, EcoShine is the trusted concierge for luxury fleet owners who demand the best for
+                            their cars and the earth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [4] Our Values -->
+        <section class="py-32 bg-white dark:bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-outfit font-black uppercase text-center mb-24">The <span
+                        class="text-emerald-500">EcoShine</span> Code</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <div
+                        class="text-center space-y-6 p-8 bg-emerald-50 dark:bg-emerald-950 rounded-[2.5rem] border border-emerald-100 dark:border-emerald-800 group hover:bg-emerald-500 dark:hover:bg-emerald-500 transition-all duration-500">
+                        <div class="w-full h-24 rounded-2xl overflow-hidden mb-4"><img
+                                src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <h4 class="text-sm font-black uppercase tracking-widest group-hover:text-emerald-950 dark:group-hover:text-emerald-950">
+                            Sustainability First</h4>
+                    </div>
+                    <div
+                        class="text-center space-y-6 p-8 bg-emerald-50 dark:bg-emerald-950 rounded-[2.5rem] border border-emerald-100 dark:border-emerald-800 group hover:bg-emerald-500 dark:hover:bg-emerald-500 transition-all duration-500">
+                        <div class="w-full h-24 rounded-2xl overflow-hidden mb-4"><img
+                                src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <h4 class="text-sm font-black uppercase tracking-widest group-hover:text-emerald-950 dark:group-hover:text-emerald-950">Customer
+                            Convenience</h4>
+                    </div>
+                    <div
+                        class="text-center space-y-6 p-8 bg-emerald-50 dark:bg-emerald-950 rounded-[2.5rem] border border-emerald-100 dark:border-emerald-800 group hover:bg-emerald-500 dark:hover:bg-emerald-500 transition-all duration-500">
+                        <div class="w-full h-24 rounded-2xl overflow-hidden mb-4"><img
+                                src="https://images.pexels.com/photos/13193899/pexels-photo-13193899.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <h4 class="text-sm font-black uppercase tracking-widest group-hover:text-emerald-950 dark:group-hover:text-emerald-950">Quality
+                            Commitment</h4>
+                    </div>
+                    <div
+                        class="text-center space-y-6 p-8 bg-emerald-50 dark:bg-emerald-950 rounded-[2.5rem] border border-emerald-100 dark:border-emerald-800 group hover:bg-emerald-500 dark:hover:bg-emerald-500 transition-all duration-500">
+                        <div class="w-full h-24 rounded-2xl overflow-hidden mb-4"><img
+                                src="https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <h4 class="text-sm font-black uppercase tracking-widest group-hover:text-emerald-950 dark:group-hover:text-emerald-950">
+                            Transparency & Trust</h4>
+                    </div>
+                    <div
+                        class="text-center space-y-6 p-8 bg-emerald-50 dark:bg-emerald-950 rounded-[2.5rem] border border-emerald-100 dark:border-emerald-800 group hover:bg-emerald-500 dark:hover:bg-emerald-500 transition-all duration-500">
+                        <div class="w-full h-24 rounded-2xl overflow-hidden mb-4"><img
+                                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                        </div>
+                        <h4 class="text-sm font-black uppercase tracking-widest group-hover:text-emerald-950 dark:group-hover:text-emerald-950">Innovation
+                            in Care</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [5] Our Impact -->
+        <section class="py-32 bg-black text-white relative">
+            <div class="container mx-auto px-6 grid md:grid-cols-3 gap-16 text-center">
+                <div class="space-y-4">
+                    <h3 class="text-7xl font-outfit font-black text-emerald-500 italic">2.5M+</h3>
+                    <p class="text-xs font-black uppercase tracking-[0.3em] text-emerald-100/50">Liters Of Water Saved
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-7xl font-outfit font-black text-emerald-500 italic">15k</h3>
+                    <p class="text-xs font-black uppercase tracking-[0.3em] text-emerald-100/50">Cars Serviced To Glow
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-7xl font-outfit font-black text-emerald-500 italic">100%</h3>
+                    <p class="text-xs font-black uppercase tracking-[0.3em] text-emerald-100/50">Satisfied Elite Members
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- [6] Why Customers Trust Us -->
+        <section class="py-32 bg-white dark:bg-black">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center">
+                <div class="space-y-12">
+                    <h2 class="text-5xl font-outfit font-black uppercase italic leading-none">Why We Are <span
+                            class="text-emerald-500">The Choice</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group">
+                            <div
+                                class="w-10 h-10 shrink-0 bg-emerald-500 text-emerald-950 rounded-xl flex items-center justify-center font-black">
+                                ?</div>
+                            <div class="space-y-2">
+                                <h4 class="text-xl font-bold uppercase italic tracking-tighter">Absolute Consistency
+                                </h4>
+                                <p class="text-gray-500 text-sm">Every wash follows a 42-point quality checklist,
+                                    ensuring no corner is left unpolished.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div
+                                class="w-10 h-10 shrink-0 bg-emerald-500 text-emerald-950 rounded-xl flex items-center justify-center font-black">
+                                ?</div>
+                            <div class="space-y-2">
+                                <h4 class="text-xl font-bold uppercase italic tracking-tighter">Nano-Safe Formulas</h4>
+                                <p class="text-gray-500 text-sm">We use lab-tested, pH-neutral polymers that are safe
+                                    even for the rarest vintage paints.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div
+                                class="w-10 h-10 shrink-0 bg-emerald-500 text-emerald-950 rounded-xl flex items-center justify-center font-black">
+                                ?</div>
+                            <div class="space-y-2">
+                                <h4 class="text-xl font-bold uppercase italic tracking-tighter">Certified Masters</h4>
+                                <p class="text-gray-500 text-sm">Our detailers aren't just staff; they are certified
+                                    masters of the EcoShine restoration method.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Visual Proof Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4 pt-12"><img
+                            src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            class="rounded-3xl shadow-xl grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover aspect-[4/5]"><img
+                            src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            class="rounded-3xl shadow-xl grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover"></div>
+                    <div class="space-y-4"><img
+                            src="https://images.pexels.com/photos/5233261/pexels-photo-5233261.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            class="rounded-3xl shadow-xl grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover"><img
+                            src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            class="rounded-3xl shadow-xl grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover aspect-[3/2]"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [7] Final CTA -->
+        <section class="py-32 bg-emerald-500 text-emerald-950 text-center">
+            <div class="container mx-auto px-6 space-y-12">
+                <h2 class="text-6xl md:text-8xl font-outfit font-black uppercase italic tracking-tighter leading-none">
+                    Join The <br>Revolution.</h2>
+                <div class="flex justify-center">
+                    <a href="signup.html"
+                        class="px-16 py-7 bg-emerald-950 text-white font-black text-2xl rounded-3xl shadow-2xl hover:scale-105 active:scale-95 transition-all">Start
+                        Your Eco Journey</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+        class="py-24 bg-emerald-50 dark:bg-black text-emerald-950 dark:text-white border-t border-emerald-100 dark:border-white/10 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <!-- About Section -->
+                <div class="space-y-8">
+                    <a href="index.html" class="flex items-center space-x-4 group">
+                        <img src="assets/images/logo.png" alt="EcoShine Logo"
+                            class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                        <span class="text-3xl font-outfit font-black uppercase tracking-tighter">EcoShine</span>
+                    </a>
+                    <p
+                        class="text-emerald-900/60 dark:text-emerald-100/40 text-sm leading-relaxed max-w-xs font-bold uppercase italic">
+                        Redefining luxury car care through sustainable, waterless technology. Driven by perfection,
+                        powered by the planet.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
+                    <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
+                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a>
+                        </li>
+                        <li><a href="about.html" class="hover:text-emerald-500 transition-colors">Our Story</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Service Kits</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:text-emerald-500 transition-colors">Connect</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Concierge Support</h5>
+                    <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
+                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800)
+                                ECO-GLOS</a></li>
+                        <li><a href="mailto:concierge@ecoshine.com"
+                                class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
+                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability
+                                City</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="space-y-8 text-center md:text-left">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">The Social Circle</h5>
+                    <div class="flex items-center justify-center md:justify-start gap-8">
+                        <a href="https://facebook.com"
+                            class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com"
+                            class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com"
+                            class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                                </path>
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div
+                class="pt-12 border-t border-emerald-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p
+                    class="text-[10px] font-black uppercase tracking-[0.5em] text-emerald-900/30 dark:text-white/20 italic text-center md:text-left">
+                    © 2026 EcoShine. All rights reserved.
+                </p>
+                <div
+                    class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-emerald-900/40 dark:text-white/30">
+                    <a href="#" class="hover:text-emerald-500 transition-colors">Privacy Shield</a>
+                    <a href="#" class="hover:text-emerald-500 transition-colors">Terms of Detailing</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top"
+        class="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center bg-emerald-500 text-emerald-950 rounded-2xl shadow-2xl opacity-0 invisible hover:scale-110 active:scale-95 transition-all"><i
+            data-lucide="chevron-up" class="w-6 h-6"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

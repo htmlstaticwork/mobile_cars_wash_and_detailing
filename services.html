@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | EcoShine Premium Packages</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { emerald: { 50: '#fffbeb', 100: '#fef3c7', 200: '#fde68a', 300: '#fcd34d', 400: '#fbbf24', 500: '#fbbf24', 600: '#d97706', 700: '#b45309', 800: '#1f2937', 900: '#111827', 950: '#000000' } }, fontFamily: { sans: ['Inter', 'sans-serif'], outfit: ['Outfit', 'sans-serif'] } } }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-emerald-950 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Header (Same) -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-4 group">
+                <img src="assets/images/logo.png" alt="EcoShine Logo"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                <span class="text-3xl font-outfit font-black uppercase tracking-tighter dark:text-white">EcoShine</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold uppercase tracking-wider">
+                <a href="index.html" class="hover:text-emerald-500 transition-colors">Home 1</a>
+                <a href="home2.html" class="hover:text-emerald-500 transition-colors">Home 2</a>
+                <a href="about.html" class="hover:text-emerald-500 transition-colors">About</a>
+                <a href="services.html" class="text-emerald-500 font-bold">Services</a>
+                <a href="contact.html" class="hover:text-emerald-500 transition-colors">Contact</a>
+                <a href="dashboard.html"
+                    class="px-5 py-2.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-600 transition-all font-black">Dashboard</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle"
+                    class="p-2 rounded-full text-emerald-950 dark:text-white hover:bg-emerald-100 dark:hover:bg-emerald-800 transition-all">
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                </button>
+                <button id="rtl-toggle"
+                    class="p-2 text-[10px] font-black uppercase text-emerald-950 dark:text-white hover:text-emerald-500 transition-colors">RTL</button>
+                <a href="signup.html"
+                    class="px-6 py-2 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-widest rounded-full hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20">Sign
+                    Up</a>
+                <button id="menu-toggle" class="lg:hidden text-emerald-950 dark:text-white"><i data-lucide="menu"
+                        class="w-6 h-6"></i></button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden flex-col items-center py-8 space-y-6 bg-white dark:bg-emerald-900 shadow-xl border-t border-emerald-100 dark:border-emerald-800">
+            <a href="index.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 1</a>
+            <a href="home2.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 2</a>
+            <a href="about.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">About</a>
+            <a href="services.html" class="text-xl font-bold text-emerald-500 transition-colors">Services</a>
+            <a href="contact.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Contact</a>
+            <a href="signup.html" class="text-xl font-bold">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- [1] Hero Section -->
+        <section
+            class="relative min-h-[90vh] flex items-center pt-32 lg:pt-40 pb-20 bg-black text-white overflow-hidden transition-colors duration-500">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/services_hero.png" alt="Detailing Tools" class="w-full h-full object-cover scale-110 grayscale-20 contrast-125 opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-emerald-950/40"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 text-center space-y-8">
+                <div class="inline-block px-6 py-2 bg-emerald-500 text-emerald-950 text-xs font-black uppercase tracking-widest rounded-full shadow-2xl shadow-emerald-500/20">Our Services</div>
+                <h1 class="text-6xl md:text-9xl font-outfit font-black uppercase tracking-tighter leading-[0.8] drop-shadow-2xl">Premium <br><span class="text-emerald-500 italic">Care Packages.</span></h1>
+                <p class="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto font-medium italic">Curated detailing solutions for those who demand nothing less than perfection.</p>
+                <div class="pt-12 animate-bounce opacity-40"><i data-lucide="chevron-down" class="w-10 h-10 mx-auto"></i></div>
+            </div>
+        </section>
+
+        <!-- Main Services Grid -->
+        <section class="py-32 container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Service 1: Essential -->
+                <div
+                    class="p-10 bg-white dark:bg-emerald-900 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 shadow-xl group hover:border-emerald-500 transition-all flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div class="w-full h-32 rounded-2xl overflow-hidden mb-6"><img
+                                src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover"></div>
+                        <h3 class="text-3xl font-bold font-outfit">The Eco Basic</h3>
+                        <p class="text-gray-500 leading-relaxed">Perfect for your weekly refresh. Quick, clean, and
+                            completely dry.</p>
+                        <ul class="space-y-4 pt-4 border-t border-emerald-50 dark:border-emerald-800">
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Waterless Spray Wash
+                            </li>
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Wheel Face & Tire Dressing
+                            </li>
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Glass Streak-Free Polish
+                            </li>
+                            <li
+                                class="flex items-center gap-3 text-sm text-gray-300 dark:text-emerald-100/20 line-through">
+                                <i data-lucide="x" class="w-5 h-5 text-gray-300"></i> Interior Vacuum
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-12">
+                        <div class="text-4xl font-black mb-8">$39.00 <span
+                                class="text-lg font-normal text-gray-400 font-sans">/wash</span></div>
+                        <a href="contact.html"
+                            class="block w-full py-5 bg-emerald-100 dark:bg-emerald-800 text-emerald-950 dark:text-white font-bold rounded-2xl text-center group-hover:bg-emerald-500 group-hover:text-emerald-950 transition-all">Book
+                            This Plan</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Premium (Featured) -->
+                <div
+                    class="p-12 bg-emerald-500 text-emerald-950 rounded-[3rem] shadow-2xl relative transform scale-110 z-10 overflow-hidden flex flex-col justify-between">
+                    <div class="absolute inset-0 pointer-events-none opacity-20"><img
+                            src="https://images.unsplash.com/photo-1601362840469-51e4d8d59085?auto=format&fit=crop&q=80&w=400"
+                            class="w-full h-full object-cover blur-sm"></div>
+                    <div class="space-y-6 relative z-10">
+                        <div
+                            class="px-4 py-1 bg-white text-emerald-500 font-black text-xs rounded-full uppercase w-max tracking-widest mb-4">
+                            RECOMMENDED</div>
+                        <h3 class="text-4xl font-bold font-outfit">The Signature Plus</h3>
+                        <p class="text-emerald-950/70 font-medium">Full interior & exterior transformation for the
+                            discerning owner.</p>
+                        <ul class="space-y-4 pt-6 border-t border-emerald-950/20">
+                            <li class="flex items-center gap-3 text-sm font-bold"><i data-lucide="zap"
+                                    class="w-5 h-5"></i> All "Eco Basic" Features</li>
+                            <li class="flex items-center gap-3 text-sm font-bold"><i data-lucide="zap"
+                                    class="w-5 h-5"></i> High-Extraction Vacuum</li>
+                            <li class="flex items-center gap-3 text-sm font-bold"><i data-lucide="zap"
+                                    class="w-5 h-5"></i> Dashboard UV Protection</li>
+                            <li class="flex items-center gap-3 text-sm font-bold"><i data-lucide="zap"
+                                    class="w-5 h-5"></i> Scent Infusion (Organic)</li>
+                            <li class="flex items-center gap-3 text-sm font-bold"><i data-lucide="zap"
+                                    class="w-5 h-5"></i> Carnauba Wax Finish</li>
+                        </ul>
+                    </div>
+                    <div class="pt-12 relative z-10">
+                        <div class="text-5xl font-black mb-8">$79.00 <span
+                                class="text-lg font-normal opacity-50">/wash</span></div>
+                        <a href="contact.html"
+                            class="block w-full py-5 bg-emerald-950 text-emerald-50 font-bold rounded-2xl text-center hover:bg-black transition-all">Select
+                            Best Seller</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Executive -->
+                <div
+                    class="p-10 bg-white dark:bg-emerald-900 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 shadow-xl group hover:border-emerald-500 transition-all flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div class="w-full h-32 rounded-2xl overflow-hidden mb-6"><img
+                                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover"></div>
+                        <h3 class="text-3xl font-bold font-outfit">Showroom Elite</h3>
+                        <p class="text-gray-500 leading-relaxed">Absolute perfection. We leave your car looking better
+                            than brand new.</p>
+                        <ul class="space-y-4 pt-4 border-t border-emerald-50 dark:border-emerald-800">
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Everything in Signature
+                                Plus
+                            </li>
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Steam Sanitization
+                            </li>
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Engine Bay Detailing
+                            </li>
+                            <li
+                                class="flex items-center gap-3 text-sm font-bold text-emerald-700 dark:text-emerald-300">
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-500"></i> Clay Bar Treatment
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-12">
+                        <div class="text-4xl font-black mb-8">$149.00 <span
+                                class="text-lg font-normal text-gray-400 font-sans">/starts</span></div>
+                        <a href="contact.html"
+                            class="block w-full py-5 bg-emerald-100 dark:bg-emerald-800 text-emerald-950 dark:text-white font-bold rounded-2xl text-center group-hover:bg-emerald-500 group-hover:text-emerald-950 transition-all border border-emerald-300">Choose
+                            Elite Luxury</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Highlights Section -->
+        <section class="py-24 bg-gray-50 dark:bg-emerald-950">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-24 items-center">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="p-8 bg-white dark:bg-emerald-900 rounded-3xl shadow-lg space-y-4">
+                            <div class="w-full h-16 rounded-xl overflow-hidden mb-4"><img
+                                    src="https://images.pexels.com/photos/31154218/pexels-photo-31154218.jpeg"
+                                    class="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-100 transition-opacity">
+                            </div>
+                            <h4 class="font-bold">Fast Service</h4>
+                            <p class="text-xs text-gray-500">Average basic wash takes only 45 minutes.</p>
+                        </div>
+                        <div class="p-8 bg-white dark:bg-emerald-900 rounded-3xl shadow-lg space-y-4">
+                            <div class="w-full h-16 rounded-xl overflow-hidden mb-4"><img
+                                    src="https://images.pexels.com/photos/9659895/pexels-photo-9659895.jpeg"
+                                    class="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-100 transition-opacity">
+                            </div>
+                            <h4 class="font-bold">Gentle Care</h4>
+                            <p class="text-xs text-gray-500">Hand-washed with deep-pile microfibers.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <h2 class="text-5xl font-outfit font-black leading-tight italic">Every service includes
+                            <br><span class="text-emerald-500">The Eco-Guarantee</span>
+                        </h2>
+                        <p class="text-lg text-gray-600 dark:text-emerald-100/70">If you're not 100% satisfied with the
+                            shine, we'll re-do it for free within 48 hours. No questions asked.</p>
+                        <ul class="space-y-6">
+                            <li class="flex gap-4"><i data-lucide="check-circle"
+                                    class="w-6 h-6 text-emerald-500 mt-1"></i> <span>Proprietary plant-based cleaning
+                                    solutions only.</span></li>
+                            <li class="flex gap-4"><i data-lucide="check-circle"
+                                    class="w-6 h-6 text-emerald-500 mt-1"></i> <span>Background-checked professional
+                                    detailers.</span></li>
+                            <li class="flex gap-4"><i data-lucide="check-circle"
+                                    class="w-6 h-6 text-emerald-500 mt-1"></i> <span>Comprehensive paint-condition
+                                    report post-service.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [3.5] Signature Essence Accessory -->
+        <section class="py-32 bg-white dark:bg-black overflow-hidden transition-colors duration-500">
+            <div class="container mx-auto px-6">
+                <div
+                    class="bg-emerald-50 dark:bg-white/5 text-emerald-950 dark:text-white p-16 lg:p-24 rounded-[4rem] relative overflow-hidden flex flex-col items-center text-center gap-16 border border-emerald-100 dark:border-emerald-500/20 shadow-2xl">
+                    <div
+                        class="absolute inset-0 bg-[url('assets/images/car_perfume.png')] bg-cover bg-center opacity-5 dark:opacity-10 filter grayscale">
+                    </div>
+                    <div class="relative z-10 max-w-3xl space-y-8">
+                        <p class="text-emerald-500 font-black uppercase tracking-[0.3em] text-xs">The Final Touch</p>
+                        <h2 class="text-5xl md:text-8xl font-outfit font-black uppercase italic leading-none">EcoShine
+                            <br><span class="text-emerald-500">Essence</span>
+                        </h2>
+                        <p class="text-xl text-emerald-900/60 dark:text-emerald-100/40 font-medium italic">Complement
+                            your detailing session with our proprietary organic car fragrance. A sustainable, deep-notes
+                            scent designed for luxury fleets.</p>
+                        <div class="flex items-center justify-center gap-8">
+                            <div class="text-5xl font-black italic">$19.00</div>
+                            <a href="signup.html"
+                                class="px-12 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl hover:scale-105 transition-all shadow-xl shadow-emerald-500/20">Add
+                                to Cart</a>
+                        </div>
+                    </div>
+                    <div class="relative z-10 max-w-xl group">
+                        <img src="assets/images/car_perfume.png"
+                            class="w-full rounded-[3rem] shadow-[0_32px_64px_-16px_rgba(16,185,129,0.3)] group-hover:scale-105 transition-transform duration-700 animate-float">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Table (Detailed Comparison) -->
+        <section class="py-32 container mx-auto px-6">
+            <div class="text-center mb-20 space-y-4">
+                <h2 class="section-title">Compare All Features</h2>
+            </div>
+            <div
+                class="bg-white dark:bg-emerald-900 rounded-[3rem] overflow-hidden shadow-2xl border border-emerald-100 dark:border-emerald-800">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="bg-emerald-100 dark:bg-black text-emerald-950 dark:text-white transition-colors">
+                            <th class="p-8 font-outfit text-xl uppercase font-black">Service Feature</th>
+                            <th class="p-8 text-center bg-emerald-500 text-emerald-950">Basic</th>
+                            <th class="p-8 text-center text-emerald-700 dark:text-emerald-400 font-bold">Signature+</th>
+                            <th class="p-8 text-center text-emerald-800 dark:text-emerald-500 font-bold">Elite</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-emerald-50 dark:divide-emerald-800">
+                        <tr class="hover:bg-emerald-50/30 transition-colors">
+                            <td class="p-8 font-bold">Exterior Waterless Clean</td>
+                            <td class="p-8 text-center"><i data-lucide="check"
+                                    class="inline w-6 h-6 text-emerald-500"></i></td>
+                            <td class="p-8 text-center"><i data-lucide="check"
+                                    class="inline w-6 h-6 text-emerald-500"></i></td>
+                            <td class="p-8 text-center"><i data-lucide="check"
+                                    class="inline w-6 h-6 text-emerald-500"></i></td>
+                        </tr>
+                        <tr class="hover:bg-emerald-50/30 transition-colors">
+                            <td class="p-8 font-bold">Full Interior Vacuum</td>
+                            <td class="p-8 text-center"><span class="text-gray-300">--</span></td>
+                            <td class="p-8 text-center"><i data-lucide="check"
+                                    class="inline w-6 h-6 text-emerald-500"></i></td>
+                            <td class="p-8 text-center"><i data-lucide="check"
+                                    class="inline w-6 h-6 text-emerald-500"></i></td>
+                        </tr>
+                        <tr class="hover:bg-emerald-50/30 transition-colors">
+                            <td class="p-8 font-bold">Polishing & Waxing</td>
+                            <td class="p-8 text-center"><span class="text-gray-300">Spray only</span></td>
+                            <td class="p-8 text-center"><span class="text-emerald-500 font-black">Carnauba</span></td>
+                            <td class="p-8 text-center"><span class="text-emerald-500 font-black">Ceramic Seal</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-emerald-50/30 transition-colors">
+                            <td class="p-8 font-bold">Steam Sanitization</td>
+                            <td class="p-8 text-center"><i data-lucide="x" class="inline w-6 h-6 text-gray-300"></i>
+                            </td>
+                            <td class="p-8 text-center"><i data-lucide="x" class="inline w-6 h-6 text-gray-300"></i>
+                            </td>
+                            <td class="p-8 text-center"><i data-lucide="check"
+                                    class="inline w-6 h-6 text-emerald-500"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-24 bg-emerald-50 dark:bg-black text-emerald-950 dark:text-white border-t border-emerald-100 dark:border-white/10 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <!-- About Section -->
+                <div class="space-y-8">
+                    <a href="index.html" class="flex items-center space-x-4 group">
+                        <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                        <span class="text-3xl font-outfit font-black uppercase tracking-tighter">EcoShine</span>
+                    </a>
+                    <p class="text-emerald-900/60 dark:text-emerald-100/40 text-sm leading-relaxed max-w-xs font-bold uppercase italic">
+                        Redefining luxury car care through sustainable, waterless technology. Driven by perfection, powered by the planet.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
+                    <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
+                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a></li>
+                        <li><a href="about.html" class="hover:text-emerald-500 transition-colors">Our Story</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Service Kits</a></li>
+                        <li><a href="contact.html" class="hover:text-emerald-500 transition-colors">Connect</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Concierge Support</h5>
+                    <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
+                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800) ECO-GLOS</a></li>
+                        <li><a href="mailto:concierge@ecoshine.com" class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
+                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability City</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="space-y-8 text-center md:text-left">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">The Social Circle</h5>
+                    <div class="flex items-center justify-center md:justify-start gap-8">
+                        <a href="https://facebook.com" class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="pt-12 border-t border-emerald-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] font-black uppercase tracking-[0.5em] text-emerald-900/30 dark:text-white/20 italic text-center md:text-left">
+                    © 2026 EcoShine. All rights reserved.
+                </p>
+                <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-emerald-900/40 dark:text-white/30">
+                    <a href="#" class="hover:text-emerald-500 transition-colors">Privacy Shield</a>
+                    <a href="#" class="hover:text-emerald-500 transition-colors">Terms of Detailing</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top"
+        class="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center bg-emerald-500 text-emerald-950 rounded-2xl shadow-2xl opacity-0 invisible hover:scale-110 active:scale-95 transition-all"><i
+            data-lucide="chevron-up" class="w-6 h-6"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShine | Carbon-Free Mobile Car Detailing</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 50: '#fffbeb', 100: '#fef3c7', 200: '#fde68a', 300: '#fcd34d', 400: '#fbbf24', 500: '#fbbf24', 600: '#d97706', 700: '#b45309', 800: '#1f2937', 900: '#111827', 950: '#000000' },
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], outfit: ['Outfit', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white dark:bg-black text-emerald-950 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/10 dark:bg-black/10 backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-4 group">
+                <img src="assets/images/logo.png" alt="EcoShine Logo"
+                    class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                <span class="text-3xl font-outfit font-black uppercase tracking-tighter dark:text-white">EcoShine</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-black uppercase tracking-widest">
+                <a href="index.html" class="text-emerald-500">Home 1</a>
+                <a href="home2.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Home 2</a>
+                <a href="about.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">About</a>
+                <a href="services.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Services</a>
+                <a href="contact.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Contact</a>
+                <a href="dashboard.html"
+                    class="px-6 py-2.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-400 transition-all font-black">Dashboard</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle"
+                    class="p-2 rounded-full text-emerald-950 dark:text-white hover:bg-emerald-100 dark:hover:bg-emerald-800 transition-all">
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                </button>
+                <button id="rtl-toggle"
+                    class="p-2 text-[10px] font-black uppercase text-emerald-950 dark:text-white hover:text-emerald-500 transition-colors">RTL</button>
+                <a href="signup.html"
+                    class="px-6 py-2 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-widest rounded-full hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-500/20">Sign
+                    Up</a>
+                <button id="menu-toggle" class="lg:hidden text-emerald-950 dark:text-white"><i data-lucide="menu"
+                        class="w-6 h-6"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- [1] Hero Section -->
+        <section
+            class="relative min-h-screen flex items-center pt-32 lg:pt-40 pb-20 overflow-hidden bg-emerald-50 dark:bg-black transition-colors duration-500">
+            <div class="absolute inset-0 z-0">
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-emerald-500/5 to-transparent dark:from-black dark:via-gray-900/50 dark:to-emerald-500/10 opacity-80 transition-colors duration-500">
+                </div>
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center grayscale dark:grayscale-0 opacity-10 dark:opacity-20 transition-all duration-500">
+                </div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-10 animate-fade-in">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-500 text-xs font-black uppercase tracking-widest">
+                        <i data-lucide="zap" class="w-4 h-4"></i> Premium Mobile Detailing
+                    </div>
+                    <h1
+                        class="text-7xl lg:text-9xl font-outfit font-black text-emerald-950 dark:text-white leading-[0.85] uppercase tracking-tighter">
+                        Master <br>The <br><span class="text-emerald-500 italic">Shine</span>
+                    </h1>
+                    <p
+                        class="text-xl text-emerald-900/60 dark:text-emerald-100/60 max-w-lg leading-relaxed font-medium transition-colors">
+                        Sustainable luxury detailing at your doorstep. Professional-grade restoration without wasting a
+                        single drop of water.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="contact.html"
+                            class="px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl shadow-2xl hover:scale-105 active:scale-95 transition-all text-center">Book
+                            Now</a>
+                        <a href="services.html"
+                            class="px-10 py-5 bg-white dark:bg-white/5 border border-emerald-200 dark:border-white/10 text-emerald-950 dark:text-white font-black text-lg rounded-2xl hover:bg-emerald-50 dark:hover:bg-white/10 transition-all text-center">View
+                            Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [2] Why Choose Us -->
+        <section class="py-32 bg-emerald-50 dark:bg-emerald-950/20">
+            <div class="container mx-auto px-6">
+                <div class="text-center space-y-4 mb-24">
+                    <p class="text-emerald-500 font-black uppercase tracking-[0.3em] text-xs">Excellence Preferred</p>
+                    <h2 class="text-5xl font-outfit font-black uppercase tracking-tight">The <span
+                            class="text-emerald-500">EcoShine</span> Advantage</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="p-8 bg-white dark:bg-emerald-900/50 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 space-y-6 group hover:-translate-y-2 transition-all shadow-xl">
+                        <div class="aspect-video w-full rounded-2xl overflow-hidden mb-6">
+                            <img src="assets/images/waterless_wash.png" alt="Waterless Wash"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Waterless Wash</h4>
+                        <p class="text-gray-500 dark:text-emerald-100/60 text-sm leading-relaxed">Saving 200L per wash
+                            using advanced polymer technology for a scratch-free finish.</p>
+                    </div>
+                    <div
+                        class="p-8 bg-white dark:bg-emerald-900/50 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 space-y-6 group hover:-translate-y-2 transition-all shadow-xl">
+                        <div class="aspect-video w-full rounded-2xl overflow-hidden mb-6">
+                            <img src="assets/images/eco_first.png" alt="Eco First"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Eco-First</h4>
+                        <p class="text-gray-500 dark:text-emerald-100/60 text-sm leading-relaxed">100% Biodegradable and
+                            toxin-free formulas that are safe for your car and the planet.</p>
+                    </div>
+                    <div
+                        class="p-8 bg-white dark:bg-emerald-900/50 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 space-y-6 group hover:-translate-y-2 transition-all shadow-xl">
+                        <div class="aspect-video w-full rounded-2xl overflow-hidden mb-6">
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=400"
+                                alt="Doorstep"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Doorstep</h4>
+                        <p class="text-gray-500 dark:text-emerald-100/60 text-sm leading-relaxed">Mobile units arriving
+                            at your home or office, giving you luxury at your convenience.</p>
+                    </div>
+                    <div
+                        class="p-8 bg-white dark:bg-emerald-900/50 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 space-y-6 group hover:-translate-y-2 transition-all shadow-xl">
+                        <div class="aspect-video w-full rounded-2xl overflow-hidden mb-6">
+                            <img src="https://images.pexels.com/photos/5239803/pexels-photo-5239803.jpeg"
+                                alt="Fair Pricing"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Fair Pricing</h4>
+                        <p class="text-gray-500 dark:text-emerald-100/60 text-sm leading-relaxed">Transparent rates with
+                            no hidden luxury tax or surprise fees. Sustainable value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [3] Services Preview -->
+        <section class="py-32 bg-white dark:bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-6xl font-outfit font-black uppercase text-center mb-24">Precision <span
+                        class="text-emerald-500">Packages</span></h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div class="space-y-6 group cursor-pointer">
+                        <div
+                            class="aspect-[4/5] bg-emerald-50 dark:bg-emerald-900 rounded-[3rem] overflow-hidden shadow-2xl transition-transform hover:scale-105 duration-700">
+                            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=600"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h5 class="text-2xl font-bold uppercase italic">Basic Shine</h5>
+                    </div>
+                    <div class="space-y-6 group cursor-pointer">
+                        <div
+                            class="aspect-[4/5] bg-emerald-50 dark:bg-emerald-900 rounded-[3rem] overflow-hidden shadow-2xl transition-transform hover:scale-105 duration-700">
+                            <img src="https://images.pexels.com/photos/19223070/pexels-photo-19223070.jpeg"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h5 class="text-2xl font-bold uppercase italic">Interior Elite</h5>
+                    </div>
+                    <div class="space-y-6 group cursor-pointer">
+                        <div
+                            class="aspect-[4/5] bg-emerald-50 dark:bg-emerald-900 rounded-[3rem] overflow-hidden shadow-2xl transition-transform hover:scale-105 duration-700">
+                            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=600"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h5 class="text-2xl font-bold uppercase italic">Full Detailing</h5>
+                    </div>
+                    <div class="space-y-6 group cursor-pointer">
+                        <div
+                            class="aspect-[4/5] bg-emerald-50 dark:bg-emerald-900 rounded-[3rem] overflow-hidden shadow-2xl transition-transform hover:scale-105 duration-700">
+                            <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&q=80&w=600"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        </div>
+                        <h5 class="text-2xl font-bold uppercase italic">Eco Wash</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [3.5] Car Perfume Showcase -->
+        <section
+            class="py-32 bg-emerald-50 dark:bg-emerald-950/20 relative overflow-hidden transition-colors duration-500">
+            <div
+                class="absolute inset-x-0 bottom-0 top-0 pointer-events-none opacity-10 grayscale-0 bg-[url('assets/images/car_perfume.png')] bg-cover bg-center -z-0 filter blur-3xl scale-125 dark:opacity-20">
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-10 bg-emerald-500/10 dark:bg-emerald-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <img src="assets/images/car_perfume.png" alt="EcoShine Essence"
+                        class="relative z-10 w-full rounded-[4rem] shadow-[0_64px_128px_-32px_rgba(16,185,129,0.3)] group-hover:scale-105 transition-transform duration-700 animate-float">
+                </div>
+
+                <div class="space-y-10 text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-6 py-2 bg-emerald-500 text-emerald-950 rounded-full text-xs font-black uppercase tracking-widest leading-none">
+                        New Signature Launch</div>
+                    <h2
+                        class="text-6xl md:text-8xl font-outfit font-black uppercase italic leading-none tracking-tighter text-emerald-950 dark:text-white">
+                        The Scent Of <br><span class="text-emerald-500">Excellence.</span></h2>
+                    <p class="text-xl text-emerald-900/60 dark:text-emerald-100/60 leading-relaxed max-w-lg italic">
+                        "Echoing the freshness of a rain-swept forest, the **EcoShine Essence** is more than a
+                        fragrance—it's the final note of a master-class grooming session."</p>
+
+                    <div class="flex flex-col gap-6">
+                        <div
+                            class="p-8 bg-white dark:bg-emerald-900/50 rounded-3xl border border-emerald-100 dark:border-emerald-800 space-y-4 shadow-xl shadow-emerald-500/5">
+                            <h4 class="text-2xl font-bold uppercase italic text-emerald-950 dark:text-white">EcoShine
+                                Essence <span class="text-emerald-500 italic ml-2">$19</span></h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Natural wood-based infusion with 100%
+                                organic essential oils. Zero chemicals, just pure air.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="signup.html"
+                                class="px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl shadow-xl hover:scale-105 transition-all">Add
+                                To Booking</a>
+                            <a href="#"
+                                class="px-10 py-5 bg-white dark:bg-white/5 border border-emerald-100 dark:border-white/10 text-emerald-950 dark:text-white font-black text-lg rounded-2xl hover:bg-emerald-500 hover:text-emerald-950 transition-all">Limited
+                                Edition</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [4] Words of Excellence -->
+        <section
+            class="py-32 bg-white dark:bg-black text-emerald-950 dark:text-white relative overflow-hidden transition-colors duration-500">
+            <div class="absolute top-0 right-0 p-24 opacity-5 pointer-events-none">
+                <i data-lucide="quote" class="w-96 h-96 text-emerald-500"></i>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-24 items-center">
+                    <div class="space-y-8">
+                        <h2
+                            class="text-5xl font-outfit font-black uppercase italic leading-tight text-emerald-950 dark:text-white">
+                            The <span class="text-emerald-500">EcoShine</span> <br>Philosophy</h2>
+                        <p
+                            class="text-xl text-emerald-900/60 dark:text-emerald-100/40 font-light leading-relaxed max-w-md italic">
+                            "True luxury isn't just about the finish; it's about the footprint we leave behind. We
+                            believe excellence and sustainability are one and the same."</p>
+                        <div class="flex items-center gap-4 pt-4">
+                            <span class="w-12 h-0.5 bg-emerald-500"></span>
+                            <span class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Founder's
+                                Note</span>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-12">
+                        <div
+                            class="p-12 bg-emerald-50 dark:bg-white/5 border border-emerald-100 dark:border-white/10 rounded-[3rem] space-y-8 relative group hover:bg-emerald-100 dark:hover:bg-white/10 transition-all duration-500 shadow-xl">
+                            <i data-lucide="quote" class="w-12 h-12 text-emerald-500 absolute -top-6 left-10"></i>
+                            <p
+                                class="text-2xl font-outfit font-bold italic leading-snug text-emerald-950 dark:text-white">
+                                "EcoShine didn't just wash my car; they restored its soul. The environmental aspect is
+                                just the cherry on top."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500"></div>
+                                <h6
+                                    class="text-sm font-black uppercase tracking-widest text-emerald-900 dark:text-white">
+                                    — Marcus Thorne, <span class="text-emerald-500/50">Collector</span></h6>
+                            </div>
+                        </div>
+
+                        <div
+                            class="p-12 bg-emerald-50 dark:bg-white/5 border border-emerald-100 dark:border-white/10 rounded-[3rem] space-y-8 relative group hover:bg-emerald-100 dark:hover:bg-white/10 transition-all duration-500 shadow-xl">
+                            <i data-lucide="quote" class="w-12 h-12 text-emerald-500 absolute -top-6 left-10"></i>
+                            <p
+                                class="text-2xl font-outfit font-bold italic leading-snug text-emerald-950 dark:text-white">
+                                "Meticulous, professional, and zero waste. This is the future of automotive grooming."
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-8 h-8 rounded-full bg-emerald-500"></div>
+                                <h6
+                                    class="text-sm font-black uppercase tracking-widest text-emerald-900 dark:text-white">
+                                    — Elena Rossi, <span class="text-emerald-500/50">Executive Detailer</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [5] Testimonials -->
+        <section class="py-32 bg-emerald-50 dark:bg-emerald-950/20">
+            <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+                <div class="p-12 bg-white dark:bg-emerald-900 rounded-[3rem] shadow-xl space-y-6 italic">
+                    <p class="text-lg">"Absolutely floored by the results. The convenience of them coming to my office
+                        and leaving a showroom finish is unparalleled."</p>
+                    <h6 class="font-black uppercase tracking-widest text-emerald-500 text-xs">— Alan Drake</h6>
+                </div>
+                <div class="p-12 bg-white dark:bg-emerald-900 rounded-[3rem] shadow-xl space-y-6 italic">
+                    <p class="text-lg">"Eco-friendly was my priority, but the shine they delivered exceeded all the
+                        traditional washes I've used. Five stars."</p>
+                    <h6 class="font-black uppercase tracking-widest text-emerald-500 text-xs">— Sarah Lin</h6>
+                </div>
+                <div class="p-12 bg-white dark:bg-emerald-900 rounded-[3rem] shadow-xl space-y-6 italic">
+                    <p class="text-lg">"Meticulous attention to detail. Every corner of the interior was pristine.
+                        Highly professional concierge team."</p>
+                    <h6 class="font-black uppercase tracking-widest text-emerald-500 text-xs">— James Vance</h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- [6] Pricing Highlight -->
+        <section class="py-32 bg-white dark:bg-black">
+            <div class="container mx-auto px-6">
+                <div
+                    class="bg-emerald-500 p-16 rounded-[4rem] flex flex-col md:flex-row justify-between items-center gap-12">
+                    <div class="space-y-4 text-center md:text-left">
+                        <h3 class="text-5xl font-outfit font-black text-emerald-950 uppercase italic leading-none">
+                            Starting Experience</h3>
+                        <p class="text-emerald-900 font-bold max-w-sm">Full exterior polymer restoration and express
+                            wheel shine.</p>
+                    </div>
+                    <div class="text-7xl font-outfit font-black text-emerald-950 italic tracking-tighter">$39 <span
+                            class="text-xl not-italic opacity-50 uppercase font-sans">Only</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- [7] CTA Section -->
+        <section
+            class="py-32 bg-emerald-50 dark:bg-black text-emerald-950 dark:text-white text-center relative overflow-hidden transition-colors duration-500">
+            <div class="container mx-auto px-6 relative z-10 space-y-8">
+                <h2 class="text-5xl md:text-7xl font-outfit font-black uppercase tracking-tighter leading-none italic">
+                    Experience The <br><span class="text-emerald-500">Perfect Shine.</span></h2>
+                <p
+                    class="text-xl text-emerald-900/60 dark:text-emerald-100/40 font-bold uppercase tracking-widest italic">
+                    Join the eco-luxury circle today.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
+                    <a href="signup.html"
+                        class="px-12 py-6 bg-emerald-500 text-emerald-950 font-black text-2xl rounded-3xl shadow-2xl shadow-emerald-500/40 hover:scale-110 active:scale-95 transition-all">Instant
+                        Booking</a>
+                    <a href="contact.html"
+                        class="px-12 py-6 bg-white dark:bg-white/5 border border-emerald-500 text-emerald-950 dark:text-white font-black text-2xl rounded-3xl hover:bg-emerald-500 hover:text-emerald-950 transition-all">Support
+                        Center</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-24 bg-emerald-50 dark:bg-black text-emerald-950 dark:text-white border-t border-emerald-100 dark:border-white/10 transition-colors duration-500">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <!-- About Section -->
+                <div class="space-y-8">
+                    <a href="index.html" class="flex items-center space-x-4 group">
+                        <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                        <span class="text-3xl font-outfit font-black uppercase tracking-tighter">EcoShine</span>
+                    </a>
+                    <p class="text-emerald-900/60 dark:text-emerald-100/40 text-sm leading-relaxed max-w-xs font-bold uppercase italic">
+                        Redefining luxury car care through sustainable, waterless technology. Driven by perfection, powered by the planet.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
+                    <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
+                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a></li>
+                        <li><a href="about.html" class="hover:text-emerald-500 transition-colors">Our Story</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Service Kits</a></li>
+                        <li><a href="contact.html" class="hover:text-emerald-500 transition-colors">Connect</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Concierge Support</h5>
+                    <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
+                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800) ECO-GLOS</a></li>
+                        <li><a href="mailto:concierge@ecoshine.com" class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
+                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability City</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="space-y-8 text-center md:text-left">
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">The Social Circle</h5>
+                    <div class="flex items-center justify-center md:justify-start gap-8">
+                        <a href="https://facebook.com" class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" class="text-emerald-500 hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="pt-12 border-t border-emerald-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] font-black uppercase tracking-[0.5em] text-emerald-900/30 dark:text-white/20 italic text-center md:text-left">
+                    © 2026 EcoShine. All rights reserved.
+                </p>
+                <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-emerald-900/40 dark:text-white/30">
+                    <a href="#" class="hover:text-emerald-500 transition-colors">Privacy Shield</a>
+                    <a href="#" class="hover:text-emerald-500 transition-colors">Terms of Detailing</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top"
+        class="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center bg-emerald-500 text-emerald-950 rounded-2xl shadow-2xl opacity-0 invisible hover:scale-110 active:scale-95 transition-all"><i
+            data-lucide="chevron-up" class="w-6 h-6"></i></button>
+
+    <script src="assets/js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

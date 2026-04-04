@@ -31,20 +31,20 @@
 
     <!-- Header -->
     <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between relative">
             <a href="index.html" class="flex items-center space-x-2 sm:space-x-4 group shrink-0">
                 <img src="assets/images/logo.png" alt="EcoShine Logo"
-                    class="w-8 h-8 sm:w-12 sm:h-12 object-contain group-hover:scale-110 transition-transform">
-                <span class="text-sm sm:text-3xl font-outfit font-black uppercase tracking-tighter dark:text-white truncate">EcoShine</span>
+                    class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
+                <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter text-emerald-500 truncate">EcoShine</span>
             </a>
-            <div class="hidden xl:flex items-center space-x-8 text-sm font-black uppercase tracking-widest ml-20">
+            <div class="hidden xl:flex items-center space-x-8 text-sm font-black uppercase tracking-widest absolute left-1/2 transform -translate-x-1/2">
                 <a href="index.html"
                     class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Home 1</a>
                 <a href="home2.html"
                     class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Home 2</a>
+                <a href="services.html" class="text-emerald-500 whitespace-nowrap">Services</a>
                 <a href="about.html"
                     class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">About</a>
-                <a href="services.html" class="text-emerald-500 whitespace-nowrap">Services</a>
                 <a href="pricing.html"
                     class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Pricing</a>
                 <a href="contact.html"
@@ -70,8 +70,8 @@
             class="hidden xl:hidden flex-col items-center py-8 space-y-6 bg-white dark:bg-emerald-900 shadow-xl border-t border-emerald-100 dark:border-emerald-800">
             <a href="index.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 1</a>
             <a href="home2.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 2</a>
-            <a href="about.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">About</a>
             <a href="services.html" class="text-xl font-bold hover:text-emerald-500 transition-colors text-emerald-500">Services</a>
+            <a href="about.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">About</a>
             <a href="pricing.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Pricing</a>
             <a href="contact.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Contact</a>
             <a href="dashboard.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Dashboard</a>
@@ -87,11 +87,11 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-emerald-50 via-emerald-50/50 to-transparent dark:from-black dark:via-black/80"></div>
             </div>
 
-            <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 text-center lg:text-left grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-8">
+            <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 flex flex-col items-center text-center">
+                <div class="space-y-8 flex flex-col items-center">
                     <div class="inline-block px-4 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-500 text-xs font-black uppercase tracking-widest">Precision Care</div>
-                    <h1 class="text-5xl md:text-8xl font-outfit font-black uppercase tracking-tighter leading-none mb-8 italic">The Art of <br><span class="text-emerald-500">Restoration.</span></h1>
-                    <p class="text-lg md:text-xl text-emerald-900/70 dark:text-gray-400 max-w-xl font-medium">From molecular-level cleaning to advanced paint protection, our services are engineered for the ultimate showroom glow.</p>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-outfit font-black uppercase tracking-tighter leading-tight mb-8 italic">The Art of <span class="text-emerald-500">Restoration.</span></h1>
+                    <p class="text-lg md:text-xl text-emerald-900/70 dark:text-gray-400 max-w-2xl font-medium mx-auto">From molecular-level cleaning to advanced paint protection, our services are engineered for the ultimate showroom glow.</p>
                 </div>
             </div>
         </section>
@@ -106,53 +106,53 @@
 
                 <div class="grid lg:grid-cols-3 gap-8">
                     <!-- Exterior Mastery -->
-                    <div class="group relative bg-emerald-50 dark:bg-emerald-950/20 p-10 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-4 hover:scale-105 transition-all duration-500 text-center flex flex-col items-center cursor-pointer">
+                    <div class="group relative bg-emerald-50 dark:bg-emerald-950/20 p-10 lg:p-6 xl:p-10 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-4 hover:scale-105 transition-all duration-500 text-center flex flex-col items-center cursor-pointer">
                         <div class="w-16 h-16 bg-emerald-500 text-emerald-950 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform mx-auto">
                             <i data-lucide="droplets" class="w-8 h-8"></i>
                         </div>
                         <h3 class="text-2xl font-black uppercase italic mb-4">Exterior Mastery</h3>
                         <p class="text-emerald-900/60 dark:text-emerald-100/40 text-sm leading-relaxed mb-8">Not a wash, but a renovation. Using waterless polymer technology to safely Lift dirt and infuse shine.</p>
                         <ul class="space-y-3 mb-8 text-left">
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Clay Bar Decontamination</li>
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Carnauba Wax Infusion</li>
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Wheel Arch Grooming</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i> Clay Bar Decontamination</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i> Carnauba Wax Infusion</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i> Wheel Arch Grooming</li>
                         </ul>
-                        <div class="pt-4 border-t border-emerald-100 dark:border-emerald-800 w-full">
+                        <div class="mt-auto pt-4 border-t border-emerald-100 dark:border-emerald-800 w-full">
                             <span class="text-xs font-black uppercase tracking-widest text-emerald-500">Starting at $39</span>
                         </div>
                     </div>
 
                     <!-- Interior Purify -->
-                    <div class="group relative bg-emerald-950 text-white p-10 rounded-[3rem] shadow-2xl transform scale-105 z-10 text-center flex flex-col items-center hover:-translate-y-6 hover:scale-[1.1] transition-all duration-500 cursor-pointer">
+                    <div class="group relative bg-emerald-950 text-white p-10 lg:p-6 xl:p-10 rounded-[3rem] shadow-2xl transform scale-105 z-10 text-center flex flex-col items-center hover:-translate-y-6 hover:scale-[1.1] transition-all duration-500 cursor-pointer">
                         <div class="w-16 h-16 bg-white text-emerald-950 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-white/10 group-hover:scale-110 transition-transform mx-auto">
                             <i data-lucide="wind" class="w-8 h-8"></i>
                         </div>
                         <h3 class="text-2xl font-black uppercase italic mb-4">Interior Purify</h3>
                         <p class="text-white/60 text-sm leading-relaxed mb-8">A clinical approach to cabin hygiene. Removing allergens and restoring materials to factory-fresh condition.</p>
                         <ul class="space-y-3 mb-8 text-left">
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i> Ozone Air Treatment</li>
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i> Leather pH Balancing</li>
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i> Deep Fiber Steaming</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-white shrink-0"></i> Ozone Air Treatment</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-white shrink-0"></i> Leather pH Balancing</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-white shrink-0"></i> Deep Fiber Steaming</li>
                         </ul>
-                        <div class="pt-4 border-t border-white/10 w-full">
+                        <div class="mt-auto pt-4 border-t border-white/10 w-full">
                             <span class="text-xs font-black uppercase tracking-widest text-emerald-500">Starting at $79</span>
                         </div>
                         <div class="absolute -top-4 right-8 bg-emerald-500 text-emerald-950 text-[10px] font-black uppercase tracking-[0.2em] px-4 py-2 rounded-full shadow-lg">Most Popular</div>
                     </div>
 
                     <!-- Shield+ Protection -->
-                    <div class="group relative bg-emerald-50 dark:bg-emerald-950/20 p-10 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-4 hover:scale-105 transition-all duration-500 text-center flex flex-col items-center cursor-pointer">
+                    <div class="group relative bg-emerald-50 dark:bg-emerald-950/20 p-10 lg:p-6 xl:p-10 rounded-[3rem] border border-emerald-100 dark:border-emerald-800 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-4 hover:scale-105 transition-all duration-500 text-center flex flex-col items-center cursor-pointer">
                         <div class="w-16 h-16 bg-emerald-500 text-emerald-950 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform mx-auto">
                             <i data-lucide="shield-check" class="w-8 h-8"></i>
                         </div>
                         <h3 class="text-2xl font-black uppercase italic mb-4">Shield+ Protection</h3>
                         <p class="text-emerald-900/60 dark:text-emerald-100/40 text-sm leading-relaxed mb-8">Future-proofing your investment. Molecular coatings that repel water, dust, and UV damage.</p>
                         <ul class="space-y-3 mb-8 text-left">
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Glass Hydrophobic Layer</li>
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> UV-Blocked Trim Glaze</li>
-                            <li class="flex items-center gap-3 text-xs font-bold uppercase"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Nano-Bond Protection</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i> Glass Hydrophobic Layer</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i> UV-Blocked Trim Glaze</li>
+                            <li class="flex items-center gap-3 text-xs lg:text-[11px] xl:text-xs font-bold uppercase whitespace-nowrap"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i> Nano-Bond Protection</li>
                         </ul>
-                        <div class="pt-4 border-t border-emerald-100 dark:border-emerald-800 w-full">
+                        <div class="mt-auto pt-4 border-t border-emerald-100 dark:border-emerald-800 w-full">
                             <span class="text-xs font-black uppercase tracking-widest text-emerald-500">Starting at $149</span>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
         <!-- [3] The Process -->
         <section class="py-32 bg-emerald-500 text-emerald-950 overflow-hidden">
             <div class="container mx-auto px-6">
-                <div class="grid lg:grid-cols-4 gap-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
                     <div class="space-y-4">
                         <h4 class="text-8xl font-outfit font-black opacity-20">01</h4>
                         <h5 class="text-xl font-black uppercase italic">Digitial Booking</h5>
@@ -231,8 +231,8 @@
                     <h2 class="text-4xl md:text-7xl font-outfit font-black uppercase text-white italic leading-none">Ready for the<br><span class="text-emerald-500">Perfect Glow?</span></h2>
                     <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto">Skip the line and experience the next generation of mobile detailing.</p>
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <a href="contact.html" class="px-12 py-5 bg-emerald-500 text-emerald-950 font-black text-xl rounded-2xl hover:scale-105 transition-all w-full md:w-auto">Book Now</a>
-                        <a href="pricing.html" class="px-12 py-5 bg-white/10 text-white border border-white/20 font-black text-xl rounded-2xl hover:bg-white/20 transition-all w-full md:w-auto uppercase italic">View Packages</a>
+                        <a href="contact.html" class="px-8 md:px-12 py-4 md:py-5 bg-emerald-500 text-emerald-950 font-black text-base md:text-xl rounded-2xl hover:scale-105 transition-all w-full md:w-auto text-center">Book Now</a>
+                        <a href="pricing.html" class="px-8 md:px-12 py-4 md:py-5 bg-white/10 text-white border border-white/20 font-black text-base md:text-xl rounded-2xl hover:bg-white/20 transition-all w-full md:w-auto uppercase italic text-center">View Packages</a>
                     </div>
                 </div>
             </div>
@@ -242,74 +242,59 @@
     <!-- Footer -->
     <footer class="py-24 bg-emerald-50 dark:bg-black text-emerald-950 dark:text-white border-t border-emerald-100 dark:border-white/10 transition-colors duration-500">
         <div class="container mx-auto px-4 md:px-16 lg:px-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 items-start">
-                <div class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 mb-20 items-start">
+                <!-- About Section -->
+                <div class="space-y-6 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <a href="index.html" class="flex items-center gap-4 group">
-                        <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-10 h-10 object-contain group-hover:scale-110 transition-transform">
-                        <span class="text-2xl font-outfit font-black uppercase tracking-tighter leading-none text-emerald-950 dark:text-white">EcoShine</span>
+                        <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
+                        <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter leading-none text-emerald-500">EcoShine</span>
                     </a>
-                    <p class="text-emerald-900/60 dark:text-emerald-100/50 text-xs font-semibold leading-relaxed max-w-xs uppercase tracking-wider">
+                    <p class="text-emerald-900/60 dark:text-emerald-100/50 text-[10px] sm:text-xs font-semibold leading-relaxed max-w-xs uppercase tracking-wider">
                         Redefining luxury car care through sustainable, waterless technology. Driven by perfection, powered by the planet.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="space-y-8">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
-                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a>
-                        </li>
+                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a></li>
                         <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Services</a></li>
                         <li><a href="about.html" class="hover:text-emerald-500 transition-colors">Our Story</a></li>
-                        <li><a href="pricing.html" class="hover:text-emerald-500 transition-colors">Pricing Plans</a>
-                        </li>
+                        <li><a href="pricing.html" class="hover:text-emerald-500 transition-colors">Pricing Plans</a></li>
                         <li><a href="contact.html" class="hover:text-emerald-500 transition-colors">Connect</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
-                <div class="space-y-8">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Concierge Support</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
-                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800)
-                                ECO-GLOS</a></li>
-                        <li><a href="mailto:concierge@ecoshine.com"
-                                class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
-                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability
-                                City</a></li>
+                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800) ECO-GLOS</a></li>
+                        <li><a href="mailto:concierge@ecoshine.com" class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
+                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability City</a></li>
                     </ul>
                 </div>
 
                 <!-- Social Media -->
-                <div class="space-y-8 text-center md:text-left">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">The Social Circle</h5>
-                    <div class="flex items-center justify-center md:justify-start gap-8">
-                        <a href="https://facebook.com"
-                            class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                    <div class="flex items-center justify-center sm:justify-start gap-8">
+                        <a href="https://facebook.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
-                        <a href="https://instagram.com"
-                            class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
+                        <a href="https://instagram.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
-                        <a href="https://youtube.com"
-                            class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
-                                <path
-                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
-                                </path>
+                        <a href="https://youtube.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
                                 <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
                             </svg>
                         </a>

@@ -32,24 +32,24 @@
     <!-- Header -->
     <!-- Header -->
     <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between relative">
             <a href="index.html" class="flex items-center space-x-2 sm:space-x-4 group shrink-0">
                 <img src="assets/images/logo.png" alt="EcoShine Logo"
-                    class="w-8 h-8 sm:w-12 sm:h-12 object-contain group-hover:scale-110 transition-transform">
-                <span class="text-sm sm:text-3xl font-outfit font-black uppercase tracking-tighter dark:text-white truncate">EcoShine</span>
+                    class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
+                <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter text-emerald-500 truncate">EcoShine</span>
             </a>
-            <div class="hidden xl:flex items-center space-x-8 text-sm font-black uppercase tracking-widest ml-20">
+            <div class="hidden xl:flex items-center space-x-8 text-sm font-black uppercase tracking-widest absolute left-1/2 transform -translate-x-1/2">
                 <a href="index.html" class="hover:text-emerald-500 transition-colors whitespace-nowrap">Home 1</a>
                 <a href="home2.html" class="text-emerald-500 whitespace-nowrap">Home 2</a>
-                <a href="about.html" class="hover:text-emerald-500 transition-colors whitespace-nowrap">About</a>
                 <a href="services.html"
                     class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Services</a>
+                <a href="about.html" class="hover:text-emerald-500 transition-colors whitespace-nowrap">About</a>
                 <a href="pricing.html" class="hover:text-emerald-500 transition-colors whitespace-nowrap">Pricing</a>
                 <a href="contact.html" class="hover:text-emerald-500 transition-colors whitespace-nowrap">Contact</a>
                 <a href="dashboard.html"
                     class="px-4 py-1.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-400 transition-all font-black whitespace-nowrap text-[10px] uppercase tracking-widest">Dashboard</a>
             </div>
-            <div class="flex items-center space-x-1 sm:space-x-4 ml-auto">
+            <div class="flex items-center space-x-1 sm:space-x-4">
                 <button id="theme-toggle"
                     class="p-2 rounded-full hover:bg-emerald-100 dark:hover:bg-emerald-800 transition-all">
                     <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
@@ -69,8 +69,8 @@
             class="hidden xl:hidden flex-col items-center py-8 space-y-6 bg-white dark:bg-emerald-900 shadow-xl border-t border-emerald-100 dark:border-emerald-800">
             <a href="index.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 1</a>
             <a href="home2.html" class="text-xl font-bold hover:text-emerald-500 transition-colors text-emerald-500">Home 2</a>
-            <a href="about.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">About</a>
             <a href="services.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Services</a>
+            <a href="about.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">About</a>
             <a href="pricing.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Pricing</a>
             <a href="contact.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Contact</a>
             <a href="dashboard.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Dashboard</a>
@@ -103,13 +103,13 @@
                 </div>
                 <div class="relative group">
                     <div
-                        class="absolute -inset-4 bg-emerald-500/20 rounded-[4rem] group-hover:scale-105 transition-transform duration-700">
+                        class="absolute inset-0 lg:-inset-4 bg-emerald-500/20 rounded-[4rem] group-hover:scale-105 transition-transform duration-700">
                     </div>
                     <img src="assets/images/hero2.png"
                         class="relative z-10 w-full lg:max-h-[60vh] object-contain rounded-[3.5rem] shadow-2xl transition-all duration-700">
                     <!-- Quick Stats Overlay -->
                     <div
-                        class="absolute -bottom-6 -left-6 bg-white dark:bg-emerald-900 p-8 rounded-3xl shadow-2xl z-20 space-y-2 border border-emerald-100 dark:border-emerald-800">
+                        class="absolute bottom-4 left-4 lg:-bottom-6 lg:-left-6 bg-white dark:bg-emerald-900 p-8 rounded-3xl shadow-2xl z-20 space-y-2 border border-emerald-100 dark:border-emerald-800">
                         <h4 class="text-3xl font-black text-emerald-500 tracking-tighter">99.9%</h4>
                         <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">Client Satisfaction
                         </p>
@@ -153,8 +153,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                     <!-- Service 1 -->
                     <div
-                        class="p-10 md:p-16 lg:p-10 bg-white dark:bg-emerald-950 rounded-[3rem] shadow-xl border border-emerald-100 dark:border-emerald-800 space-y-8 flex flex-col justify-between group hover:border-emerald-500 transition-colors">
-                        <div class="space-y-6">
+                        class="p-10 md:p-16 lg:p-10 bg-white dark:bg-emerald-950 rounded-[3rem] shadow-xl border border-emerald-100 dark:border-emerald-800 space-y-8 flex flex-col justify-between group hover:border-emerald-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 text-center items-center">
+                        <div class="space-y-6 w-full">
                             <div
                                 class="h-32 w-full mb-6 rounded-3xl overflow-hidden shadow-inner bg-emerald-50 relative group-hover:scale-105 transition-transform duration-500">
                                 <img src="https://images.pexels.com/photos/6873119/pexels-photo-6873119.jpeg"
@@ -166,7 +166,7 @@
                                 shine, and express interior vacuum.</p>
                         </div>
                         <div
-                            class="flex items-center justify-between border-t border-emerald-50 dark:border-emerald-800 pt-8">
+                            class="flex items-center justify-center gap-8 border-t border-emerald-50 dark:border-emerald-800 pt-8 w-full">
                             <span class="text-2xl font-black">$39</span>
                             <a href="#"
                                 class="text-emerald-500 font-bold uppercase text-xs tracking-widest border-b-2 border-emerald-500 pb-1">Select
@@ -175,8 +175,8 @@
                     </div>
                     <!-- Service 2 -->
                     <div
-                        class="p-10 md:p-16 lg:p-10 bg-emerald-500 dark:bg-emerald-500 rounded-[3rem] shadow-2xl space-y-8 flex flex-col justify-between transform scale-105 z-10">
-                        <div class="space-y-6">
+                        class="p-10 md:p-16 lg:p-10 bg-emerald-500 dark:bg-emerald-500 rounded-[3rem] shadow-2xl space-y-8 flex flex-col justify-between transform scale-105 z-10 text-center items-center hover:scale-110 hover:-translate-y-4 hover:shadow-[0_40px_80px_-15px_rgba(0,185,129,0.5)] transition-all duration-500">
+                        <div class="space-y-6 w-full">
                             <div
                                 class="h-32 w-full mb-6 rounded-3xl overflow-hidden shadow-inner bg-white/20 relative group-hover:scale-105 transition-transform duration-500">
                                 <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=400"
@@ -187,7 +187,7 @@
                             <p class="text-emerald-900 font-bold text-sm leading-relaxed">Full clay bar treatment,
                                 interior sanitization, and deep leather conditioning.</p>
                         </div>
-                        <div class="flex items-center justify-between border-t border-emerald-950/20 pt-8">
+                        <div class="flex items-center justify-center gap-8 border-t border-emerald-950/20 pt-8 w-full">
                             <span class="text-2xl font-black text-emerald-950">$79</span>
                             <a href="#"
                                 class="text-emerald-950 font-black uppercase text-xs tracking-widest border-b-2 border-emerald-950 pb-1">Best
@@ -196,8 +196,8 @@
                     </div>
                     <!-- Service 3 -->
                     <div
-                        class="p-10 md:p-16 lg:p-10 bg-white dark:bg-emerald-950 rounded-[3rem] shadow-xl border border-emerald-100 dark:border-emerald-800 space-y-8 flex flex-col justify-between group hover:border-emerald-500 transition-colors">
-                        <div class="space-y-6">
+                        class="p-10 md:p-16 lg:p-10 bg-white dark:bg-emerald-950 rounded-[3rem] shadow-xl border border-emerald-100 dark:border-emerald-800 space-y-8 flex flex-col justify-between group hover:border-emerald-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:mx-auto text-center items-center">
+                        <div class="space-y-6 w-full">
                             <div
                                 class="h-32 w-full mb-6 rounded-3xl overflow-hidden shadow-inner bg-emerald-50 relative group-hover:scale-105 transition-transform duration-500">
                                 <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=400"
@@ -209,7 +209,7 @@
                                 vacuum, and complete engine detailing.</p>
                         </div>
                         <div
-                            class="flex items-center justify-between border-t border-emerald-50 dark:border-emerald-800 pt-8">
+                            class="flex items-center justify-center gap-8 border-t border-emerald-50 dark:border-emerald-800 pt-8 w-full">
                             <span class="text-2xl font-black">$149</span>
                             <a href="#"
                                 class="text-emerald-500 font-bold uppercase text-xs tracking-widest border-b-2 border-emerald-500 pb-1">Select
@@ -249,10 +249,10 @@
         <!-- [5] Seat Cover Product Section -->
         <section class="py-32 bg-emerald-50 dark:bg-emerald-950/20 px-4 md:px-16 lg:px-24">
             <div class="container mx-auto">
-                <div class="bg-white dark:bg-emerald-950 rounded-[4rem] p-12 lg:p-24 shadow-2xl border border-emerald-100 dark:border-emerald-800 flex flex-col lg:flex-row-reverse items-center gap-16 relative overflow-hidden group">
-                    <div class="lg:w-1/2 space-y-8 text-center lg:text-left z-10">
+                <div class="bg-white dark:bg-emerald-950 rounded-[4rem] p-8 md:p-12 lg:p-16 xl:p-24 shadow-2xl border border-emerald-100 dark:border-emerald-800 flex flex-col lg:flex-row-reverse items-center justify-between gap-8 xl:gap-16 relative overflow-hidden group">
+                    <div class="lg:w-1/2 xl:w-7/12 space-y-8 text-center lg:text-left z-10">
                         <p class="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">Premium Accessory</p>
-                        <h2 class="text-4xl md:text-5xl lg:text-7xl font-outfit font-black uppercase italic leading-none">Armour-Flex <br><span class="text-emerald-500">Seat Shields</span></h2>
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-outfit font-black uppercase italic leading-none">Armour-Flex <br><span class="text-emerald-500">Seat Shields</span></h2>
                         <p class="text-lg text-gray-500 dark:text-emerald-100/60 leading-relaxed italic">Preserve your interior with clinical-grade vegan leather. 100% spill-proof, UV-resistant, and custom-tailored for your luxury fleet.</p>
                         <ul class="grid grid-cols-2 gap-4 text-xs font-black uppercase tracking-widest text-emerald-950 dark:text-white pb-8">
                             <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i> Spill Proof</li>
@@ -261,8 +261,8 @@
                             <li class="flex items-center gap-2"><i data-lucide="flame" class="w-4 h-4 text-emerald-500"></i> Heat Resistant</li>
                         </ul>
                         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
-                            <span class="text-5xl font-black italic text-emerald-950 dark:text-white">$199.00</span>
-                            <a href="signup.html" class="px-10 py-5 bg-emerald-500 text-emerald-950 font-black rounded-2xl shadow-xl shadow-emerald-500/20 hover:scale-[1.03] transition-all">Add to Fleet Kit</a>
+                            <span class="text-3xl md:text-5xl font-black italic text-emerald-950 dark:text-white">$199.00</span>
+                            <a href="signup.html" class="px-6 md:px-10 py-4 md:py-5 bg-emerald-500 text-emerald-950 font-black rounded-2xl shadow-xl shadow-emerald-500/20 hover:scale-[1.03] transition-all whitespace-nowrap">Add to Fleet Kit</a>
                         </div>
                     </div>
                     <div class="lg:w-1/2 relative group-hover:scale-105 transition-transform duration-1000">
@@ -297,9 +297,9 @@
                     <div class="relative">
                         <div
                             class="aspect-square bg-emerald-500/20 rounded-[3rem] p-12 relative flex items-center justify-center group">
-                            <img src="https://images.unsplash.com/photo-1551288049-bbbda50a5f4a?auto=format&fit=crop&q=80&w=600"
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
                                 alt="Dashboard Preview"
-                                class="w-full h-full object-cover rounded-[3rem] opacity-40 group-hover:opacity-60 transition-opacity">
+                                class="w-full h-full object-cover rounded-[3rem] opacity-80 group-hover:opacity-100 transition-opacity">
                             <div
                                 class="absolute bg-white dark:bg-black p-8 rounded-3xl shadow-2xl border border-emerald-100 dark:border-emerald-800 max-w-[280px]">
                                 <div class="flex items-center gap-4 mb-4">
@@ -331,29 +331,43 @@
                 </div>
             </div>
         </section>
+        <!-- Ready for Glow CTA -->
+        <section class="py-32 bg-white dark:bg-black">
+            <div class="container mx-auto px-6">
+                <div class="bg-black dark:bg-emerald-950/20 rounded-[4rem] p-12 md:p-24 text-center space-y-8 relative overflow-hidden">
+                    <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+                    <h2 class="text-4xl md:text-7xl font-outfit font-black uppercase text-white italic leading-none">Ready for the<br><span class="text-emerald-500">Perfect Glow?</span></h2>
+                    <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto">Skip the line and experience the next generation of mobile detailing.</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <a href="contact.html" class="px-12 py-5 bg-emerald-500 text-emerald-950 font-black text-lg md:text-xl rounded-2xl hover:scale-105 transition-all w-full md:w-auto text-center whitespace-nowrap">Book Now</a>
+                        <a href="pricing.html" class="px-12 py-5 bg-white/10 text-white border border-white/20 font-black text-lg md:text-xl rounded-2xl hover:bg-white/20 transition-all w-full md:w-auto uppercase italic text-center whitespace-nowrap">View Packages</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer (Basic) -->
     <!-- Footer -->
     <footer class="py-24 bg-emerald-100 dark:bg-black text-emerald-950 dark:text-white border-t border-emerald-200 dark:border-white/10 transition-colors duration-500">
         <div class="container mx-auto px-4 md:px-16 lg:px-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 items-start">
-                <div class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 mb-20 items-start">
+                <!-- About Section -->
+                <div class="space-y-6 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <a href="index.html" class="flex items-center gap-4 group">
-                        <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-10 h-10 object-contain group-hover:scale-110 transition-transform">
-                        <span class="text-2xl font-outfit font-black uppercase tracking-tighter leading-none text-emerald-950 dark:text-white">EcoShine</span>
+                        <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
+                        <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter leading-none text-emerald-500">EcoShine</span>
                     </a>
-                    <p class="text-emerald-900/60 dark:text-emerald-100/50 text-xs font-semibold leading-relaxed max-w-xs uppercase tracking-wider">
+                    <p class="text-emerald-900/60 dark:text-emerald-100/50 text-[10px] sm:text-xs font-semibold leading-relaxed max-w-xs uppercase tracking-wider">
                         Redefining luxury car care through sustainable, waterless technology. Driven by perfection, powered by the planet.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="space-y-8">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
-                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a>
-                        </li>
+                        <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a></li>
                         <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Services</a></li>
                         <li><a href="about.html" class="hover:text-emerald-500 transition-colors">Our Story</a></li>
                         <li><a href="pricing.html" class="hover:text-emerald-500 transition-colors">Pricing Plans</a></li>
@@ -362,48 +376,34 @@
                 </div>
 
                 <!-- Contact Info -->
-                <div class="space-y-8">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Concierge Support</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
-                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800)
-                                ECO-GLOS</a></li>
-                        <li><a href="mailto:concierge@ecoshine.com"
-                                class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
-                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability
-                                City</a></li>
+                        <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800) ECO-GLOS</a></li>
+                        <li><a href="mailto:concierge@ecoshine.com" class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
+                        <li><a href="#" class="hover:text-emerald-500 transition-colors">123 Eco Blvd, Sustainability City</a></li>
                     </ul>
                 </div>
 
                 <!-- Social Media -->
-                <div class="space-y-8 text-center md:text-left">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">The Social Circle</h5>
-                    <div class="flex items-center justify-center md:justify-start gap-8">
-                        <a href="https://facebook.com"
-                            class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                    <div class="flex items-center justify-center sm:justify-start gap-8">
+                        <a href="https://facebook.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
-                        <a href="https://instagram.com"
-                            class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
+                        <a href="https://instagram.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:-rotate-6 transition-transform">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
-                        <a href="https://youtube.com"
-                            class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
-                                <path
-                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
-                                </path>
+                        <a href="https://youtube.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
                                 <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
                             </svg>
                         </a>

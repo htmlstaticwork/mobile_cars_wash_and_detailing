@@ -30,7 +30,8 @@
 <body class="bg-white dark:bg-black text-emerald-950 dark:text-gray-100 transition-colors duration-300 overflow-x-hidden">
 
     <!-- Header -->
-    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/10 dark:bg-black/10 backdrop-blur-md">
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm">
         <nav class="container mx-auto px-6 py-5 flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2 sm:space-x-4 group shrink-0">
                 <img src="assets/images/logo.png" alt="EcoShine Logo"
@@ -38,17 +39,19 @@
                 <span class="text-sm sm:text-3xl font-outfit font-black uppercase tracking-tighter dark:text-white truncate">EcoShine</span>
             </a>
             <div class="hidden xl:flex items-center space-x-8 text-sm font-black uppercase tracking-widest ml-20">
-                <a href="index.html" class="text-emerald-500">Home 1</a>
+                <a href="index.html" class="text-emerald-500 whitespace-nowrap">Home 1</a>
                 <a href="home2.html"
-                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Home 2</a>
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Home 2</a>
                 <a href="about.html"
-                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">About</a>
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">About</a>
+                <a href="services.html"
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Services</a>
                 <a href="pricing.html"
-                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Pricing</a>
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Pricing</a>
                 <a href="contact.html"
-                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white">Contact</a>
+                    class="hover:text-emerald-500 transition-colors text-emerald-950 dark:text-white whitespace-nowrap">Contact</a>
                 <a href="dashboard.html"
-                    class="px-6 py-2.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-400 transition-all font-black">Dashboard</a>
+                    class="px-4 py-1.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-400 transition-all font-black whitespace-nowrap text-[10px] uppercase tracking-widest">Dashboard</a>
             </div>
             <div class="flex items-center space-x-1 sm:space-x-4 ml-auto">
                 <button id="theme-toggle"
@@ -71,6 +74,7 @@
             <a href="index.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 1</a>
             <a href="home2.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Home 2</a>
             <a href="about.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">About</a>
+            <a href="services.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Services</a>
             <a href="pricing.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Pricing</a>
             <a href="contact.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Contact</a>
             <a href="dashboard.html" class="text-xl font-bold hover:text-emerald-500 transition-colors">Dashboard</a>
@@ -81,7 +85,7 @@
     <main>
         <!-- [1] Hero Section -->
         <section
-            class="relative min-h-screen flex items-center pt-32 lg:pt-40 pb-20 overflow-hidden bg-emerald-50 dark:bg-black transition-colors duration-500">
+            class="relative min-h-screen lg:h-screen flex items-center lg:items-start pt-32 lg:pt-44 pb-20 lg:pb-0 bg-emerald-50 dark:bg-black transition-colors duration-500">
             <div class="absolute inset-0 z-0">
                 <div
                     class="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-emerald-500/5 to-transparent dark:from-black dark:via-gray-900/50 dark:to-emerald-500/10 opacity-80 transition-colors duration-500">
@@ -91,14 +95,14 @@
                 </div>
             </div>
 
-            <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-10 animate-fade-in">
+            <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 grid lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6 lg:space-y-6 animate-fade-in relative z-20">
                     <div
                         class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-500 text-xs font-black uppercase tracking-widest">
                         <i data-lucide="zap" class="w-4 h-4"></i> Premium Mobile Detailing
                     </div>
                     <h1
-                        class="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-outfit font-black text-emerald-950 dark:text-white leading-[0.85] uppercase tracking-tighter text-center lg:text-left">
+                        class="text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-outfit font-black text-emerald-950 dark:text-white leading-[0.8] lg:leading-[0.85] uppercase tracking-tighter text-center lg:text-left">
                         Master <br>The <br><span class="text-emerald-500 italic">Shine</span>
                     </h1>
                     <p
@@ -106,7 +110,7 @@
                         Sustainable luxury detailing at your doorstep. Professional-grade restoration without wasting a
                         single drop of water.
                     </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 pt-12">
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 lg:gap-6 pt-6 lg:pt-8">
                         <a href="contact.html"
                             class="px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl shadow-xl shadow-emerald-500/20 hover:shadow-2xl hover:shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all duration-300 text-center w-full sm:w-auto">Book
                             Now</a>
@@ -186,6 +190,9 @@
                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
                         </div>
                         <h5 class="text-2xl font-bold uppercase italic">Basic Shine</h5>
+                        <p class="text-sm font-medium text-emerald-950/60 dark:text-emerald-100/40 leading-relaxed mt-2">
+                            A comprehensive exterior hand wash using our signature polymer technology. We lift dirt safely without scratching, followed by a high-gloss spray sealant for immediate protection. Perfect for maintaining a showroom finish between major details.
+                        </p>
                     </div>
                     <div class="space-y-6 group cursor-pointer">
                         <div
@@ -194,6 +201,9 @@
                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
                         </div>
                         <h5 class="text-2xl font-bold uppercase italic">Interior Elite</h5>
+                        <p class="text-sm font-medium text-emerald-950/60 dark:text-emerald-100/40 leading-relaxed mt-2">
+                            Complete cabin purification including steam cleaning, leather conditioning, and anti-static dashboard treatment. We eliminate allergens and deep-clean every crevice, leaving a fresh, factory-new scent. Experience a truly sanitized luxury environment.
+                        </p>
                     </div>
                     <div class="space-y-6 group cursor-pointer">
                         <div
@@ -202,6 +212,9 @@
                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
                         </div>
                         <h5 class="text-2xl font-bold uppercase italic">Full Detailing</h5>
+                        <p class="text-sm font-medium text-emerald-950/60 dark:text-emerald-100/40 leading-relaxed mt-2">
+                            The ultimate 360-degree restoration. Combines exterior paint decontamination with deep interior extraction and engine bay cleaning. We finish with a mirror-like wax application and high-definition tire dressing for a total brand-new feel.
+                        </p>
                     </div>
                     <div class="space-y-6 group cursor-pointer">
                         <div
@@ -210,6 +223,9 @@
                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
                         </div>
                         <h5 class="text-2xl font-bold uppercase italic">Eco Wash</h5>
+                        <p class="text-sm font-medium text-emerald-950/60 dark:text-emerald-100/40 leading-relaxed mt-2">
+                            Our most sustainable option, using less than one gallon of water for the entire vehicle. Utilizing plant-based surfactants, we breakdown heavy grime while being 100% biodegradable and zero runoff. Pure perfection that respects our planet.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -403,6 +419,7 @@
                     <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
                         <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Services</a></li>
                         <li><a href="about.html" class="hover:text-emerald-500 transition-colors">Our Story</a></li>
                         <li><a href="pricing.html" class="hover:text-emerald-500 transition-colors">Pricing Plans</a></li>
                         <li><a href="contact.html" class="hover:text-emerald-500 transition-colors">Connect</a></li>
@@ -447,7 +464,7 @@
 
             <!-- Bottom Section -->
             <div class="pt-12 border-t border-emerald-200 dark:border-white/5 flex justify-center items-center">
-                <p class="text-[10px] font-black uppercase tracking-[0.5em] text-emerald-900/30 dark:text-white/20 italic text-center">
+                <p class="text-[10px] font-black uppercase tracking-[0.5em] text-emerald-900/30 dark:text-white/20 italic text-center whitespace-nowrap">
                     © 2026 EcoShine. All rights reserved.
                 </p>
             </div>

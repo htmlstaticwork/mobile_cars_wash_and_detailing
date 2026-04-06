@@ -86,4 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('text-emerald-500', 'font-bold');
         }
     });
+    
+    // --- Password Toggle ---
+    document.querySelectorAll('.password-toggle').forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const input = toggle.parentElement.querySelector('input');
+            const icon = toggle.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.setAttribute('data-lucide', 'eye-off');
+            } else {
+                input.type = 'password';
+                icon.setAttribute('data-lucide', 'eye');
+            }
+            lucide.createIcons();
+        });
+    });
 });

@@ -94,10 +94,10 @@
                         precision.</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 lg:pt-6">
                         <a href="pricing.html"
-                            class="px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl shadow-xl shadow-emerald-500/30 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/50 active:scale-95 transition-all duration-300 text-center">Explore
+                            class="px-8 xl:px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl hover:bg-emerald-600 hover:scale-105 active:scale-95 transition-all duration-300 text-center whitespace-nowrap">Explore
                             Pricing</a>
-                        <a href="contact.html"
-                            class="px-10 py-5 bg-emerald-950 text-white font-black text-lg rounded-2xl hover:bg-black hover:scale-105 active:scale-95 transition-all duration-300 text-center">Quick
+                        <a href="signup.html"
+                            class="px-8 xl:px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl hover:bg-emerald-600 hover:scale-105 active:scale-95 transition-all duration-300 text-center whitespace-nowrap">Quick
                             Booking</a>
                     </div>
                 </div>
@@ -276,20 +276,23 @@
         </section>
 
         <!-- [6] App/Booking Highlight Section -->
-        <section class="py-32 bg-white dark:bg-black">
-            <div class="container mx-auto px-4 md:px-16 lg:px-24">
+        <section class="py-32 bg-white dark:bg-black relative overflow-hidden">
+            <div
+                class="absolute inset-x-0 bottom-0 top-0 pointer-events-none opacity-10 grayscale-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center -z-0 filter blur-3xl dark:opacity-20 animate-pulse">
+            </div>
+            <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10">
                 <div
                     class="bg-emerald-50 dark:bg-emerald-950 p-12 lg:p-24 rounded-[4rem] grid lg:grid-cols-2 gap-16 items-center overflow-hidden border border-emerald-100 dark:border-emerald-800">
-                    <div class="space-y-8 text-center lg:text-left">
+                    <div class="space-y-8 text-left">
                         <h2 class="text-3xl md:text-5xl font-outfit font-black uppercase leading-tight italic">Shine On <br><span
                                 class="text-emerald-500">Recurring.</span></h2>
                         <p class="text-lg text-gray-500 leading-relaxed max-w-sm mx-auto lg:mx-0">Scheduled your wash every 2 weeks and
                             save 25%. Our intelligent dashboard tracks your fleet's shine status for you.</p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-start">
                             <a href="signup.html"
-                                class="px-8 py-4 bg-emerald-500 text-emerald-950 font-black text-base rounded-2xl shadow-xl shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap">Add To Booking</a>
+                                class="px-8 py-4 bg-emerald-500 text-emerald-950 font-black text-base rounded-2xl shadow-xl shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap w-full sm:w-auto text-center">Add To Booking</a>
                             <a href="#"
-                                class="px-8 py-4 bg-white dark:bg-white/5 border border-emerald-100 dark:border-white/10 text-emerald-950 dark:text-white font-black text-base rounded-2xl hover:bg-emerald-500 hover:text-emerald-950 hover:scale-105 active:scale-95 transition-all whitespace-nowrap">Limited Trial</a>
+                                class="px-8 py-4 bg-white dark:bg-white/5 border border-emerald-100 dark:border-white/10 text-emerald-950 dark:text-white font-black text-base rounded-2xl hover:bg-emerald-500 hover:text-emerald-950 hover:scale-105 active:scale-95 transition-all whitespace-nowrap w-full sm:w-auto text-center">Limited Trial</a>
                         </div>
                     </div>
                     <div class="relative">
@@ -299,7 +302,7 @@
                                 alt="Dashboard Preview"
                                 class="w-full h-full object-cover rounded-[3rem] opacity-80 group-hover:opacity-100 transition-opacity">
                             <div
-                                class="absolute bg-white dark:bg-black p-8 rounded-3xl shadow-2xl border border-emerald-100 dark:border-emerald-800 max-w-[280px]">
+                                class="absolute bg-white dark:bg-black p-6 md:p-8 rounded-3xl shadow-2xl border border-emerald-100 dark:border-emerald-800 w-[90%] max-w-[320px] text-left">
                                 <div class="flex items-center gap-4 mb-4">
                                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150" alt="Client Avatar" class="w-10 h-10 rounded-full object-cover border-2 border-emerald-500">
                                     <h5 class="font-bold">April 12, 2026</h5>
@@ -348,9 +351,9 @@
     <!-- Footer (Basic) -->
     <footer class="pt-24 pb-12 bg-emerald-100 dark:bg-black text-emerald-950 dark:text-white border-t border-emerald-200 dark:border-white/10 transition-colors duration-500">
         <div class="container mx-auto px-4 md:px-16 lg:px-24">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 mb-12 items-start">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 lg:gap-x-24 xl:gap-x-32 gap-y-16 mb-12 items-start">
                 <!-- About Section -->
-                <div class="space-y-6 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <a href="index.html" class="flex items-center gap-4 group">
                         <img src="assets/images/logo.png" alt="EcoShine Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
                         <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter leading-none text-emerald-500">EcoShine</span>
@@ -362,7 +365,7 @@
 
                 <!-- Quick Links -->
                 <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
-                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Quick Portal</h5>
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500 whitespace-nowrap">Quick Portal</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
                         <li><a href="index.html" class="hover:text-emerald-500 transition-colors">Home Experience</a></li>
                         <li><a href="services.html" class="hover:text-emerald-500 transition-colors">Services</a></li>
@@ -374,7 +377,7 @@
 
                 <!-- Contact Info -->
                 <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
-                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">Concierge Support</h5>
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500 whitespace-nowrap">Concierge Support</h5>
                     <ul class="space-y-4 text-sm font-black uppercase italic tracking-tighter">
                         <li><a href="tel:+18003264567" class="hover:text-emerald-500 transition-colors">+1 (800) ECO-GLOS</a></li>
                         <li><a href="mailto:concierge@ecoshine.com" class="hover:text-emerald-500 transition-colors">concierge@ecoshine.com</a></li>
@@ -384,7 +387,7 @@
 
                 <!-- Social Media -->
                 <div class="space-y-8 flex flex-col items-center sm:items-start text-center sm:text-left">
-                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500">The Social Circle</h5>
+                    <h5 class="text-xs font-black uppercase tracking-[0.3em] text-emerald-500 whitespace-nowrap">The Social Circle</h5>
                     <div class="flex items-center justify-center sm:justify-start gap-8">
                         <a href="https://facebook.com" class="text-emerald-500 hover:text-emerald-950 dark:hover:text-white transition-all hover:scale-110 group/icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/icon:rotate-6 transition-transform">

@@ -85,37 +85,36 @@
     <main>
         <!-- [1] Hero Section -->
         <section
-            class="relative min-h-screen lg:min-h-0 flex items-center lg:items-start pt-32 lg:pt-36 pb-20 lg:pb-24 bg-emerald-50 dark:bg-black transition-colors duration-500">
+            class="relative min-h-screen lg:min-h-0 flex items-center lg:items-start pt-32 lg:pt-36 pb-20 lg:pb-24 bg-emerald-50 dark:bg-black transition-colors duration-500 overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <div
-                    class="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-emerald-500/5 to-transparent dark:from-black dark:via-gray-900/50 dark:to-emerald-500/10 opacity-80 transition-colors duration-500">
-                </div>
-                <div
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center grayscale dark:grayscale-0 opacity-10 dark:opacity-20 transition-all duration-500">
+                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000" 
+                     alt="Luxury Mobile Detailing" 
+                     class="w-full h-full object-cover scale-105 transition-all duration-700 opacity-60 dark:opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-t from-emerald-500/10 via-emerald-100/5 to-transparent dark:from-black dark:via-black/80 dark:to-emerald-950/40 opacity-80 z-10 transition-colors duration-500">
                 </div>
             </div>
 
             <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 flex flex-col items-center text-center">
                 <div class="space-y-6 lg:space-y-8 animate-fade-in relative z-20 flex flex-col items-center">
                     <div
-                        class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-500 text-xs font-black uppercase tracking-widest">
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 dark:bg-emerald-500/20 text-emerald-950 dark:text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-black uppercase tracking-widest shadow-lg shadow-emerald-500/20">
                         <i data-lucide="zap" class="w-4 h-4"></i> Premium Mobile Detailing
                     </div>
                     <h1
-                        class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-outfit font-black text-emerald-950 dark:text-white leading-tight uppercase tracking-tighter">
+                        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-outfit font-black text-emerald-950 dark:text-white leading-tight uppercase tracking-tighter drop-shadow-sm dark:drop-shadow-2xl">
                         Master The <span class="text-emerald-500 italic">Shine</span>
                     </h1>
                     <p
-                        class="text-lg md:text-xl text-emerald-900/80 dark:text-emerald-100/80 max-w-2xl leading-relaxed font-bold transition-colors mx-auto">
+                        class="text-xl md:text-2xl text-emerald-950 dark:text-white leading-relaxed font-black transition-colors mx-auto italic">
                         Sustainable luxury detailing at your doorstep. Professional-grade restoration without wasting a
                         single drop of water.
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-6 pt-6 lg:pt-8">
                         <a href="signup.html"
-                            class="px-8 xl:px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl shadow-xl shadow-emerald-500/20 hover:shadow-2xl hover:shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all duration-300 text-center w-full sm:w-auto whitespace-nowrap">Quick
+                            class="px-8 xl:px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-xl rounded-2xl shadow-xl hover:bg-emerald-400 hover:shadow-emerald-500/50 hover:scale-110 active:scale-95 transition-all duration-300 text-center w-full sm:w-auto whitespace-nowrap uppercase tracking-widest">Quick
                             Booking</a>
                         <a href="pricing.html"
-                            class="px-8 xl:px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-lg rounded-2xl shadow-xl shadow-emerald-500/20 hover:shadow-2xl hover:shadow-emerald-500/40 hover:scale-105 active:scale-95 transition-all duration-300 text-center w-full sm:w-auto whitespace-nowrap">Explore
+                            class="px-8 xl:px-10 py-5 bg-emerald-500 text-emerald-950 font-black text-xl rounded-2xl shadow-xl hover:bg-emerald-400 hover:shadow-emerald-500/50 hover:scale-110 active:scale-95 transition-all duration-300 text-center w-full sm:w-auto whitespace-nowrap uppercase tracking-widest">Explore
                             Pricing</a>
                     </div>
                 </div>
@@ -195,6 +194,11 @@
                                 A comprehensive exterior hand wash using our signature polymer technology. We lift dirt safely without scratching, followed by a high-gloss spray sealant for immediate protection. Perfect for maintaining a showroom finish between major details.
                             </p>
                         </div>
+                        <div class="mt-auto pt-6 border-t border-emerald-100 dark:border-emerald-800 w-full flex justify-center">
+                            <a href="pricing.html" class="px-8 py-3 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-[0.2em] rounded-full shadow-lg shadow-emerald-500/20 hover:scale-110 hover:shadow-emerald-500/40 transition-all duration-300">
+                                Starting at $39
+                            </a>
+                        </div>
                     </div>
                     <div class="flex flex-col h-full space-y-6 group cursor-pointer">
                         <div
@@ -207,6 +211,11 @@
                             <p class="text-sm font-medium text-emerald-950/60 dark:text-emerald-100/40 leading-relaxed">
                                 Complete cabin purification including steam cleaning, leather conditioning, and anti-static dashboard treatment. We eliminate allergens and deep-clean every crevice, leaving a fresh, factory-new scent. Experience a truly sanitized luxury environment.
                             </p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-emerald-100 dark:border-emerald-800 w-full flex justify-center">
+                            <a href="pricing.html" class="px-8 py-3 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-[0.2em] rounded-full shadow-lg shadow-emerald-500/20 hover:scale-110 hover:shadow-emerald-500/40 transition-all duration-300">
+                                Starting at $79
+                            </a>
                         </div>
                     </div>
                     <div class="flex flex-col h-full space-y-6 group cursor-pointer">
@@ -221,6 +230,11 @@
                                 The ultimate 360-degree restoration. Combines exterior paint decontamination with deep interior extraction and engine bay cleaning. We finish with a mirror-like wax application and high-definition tire dressing for a total brand-new feel.
                             </p>
                         </div>
+                        <div class="mt-auto pt-6 border-t border-emerald-100 dark:border-emerald-800 w-full flex justify-center">
+                            <a href="pricing.html" class="px-8 py-3 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-[0.2em] rounded-full shadow-lg shadow-emerald-500/20 hover:scale-110 hover:shadow-emerald-500/40 transition-all duration-300">
+                                Starting at $149
+                            </a>
+                        </div>
                     </div>
                     <div class="flex flex-col h-full space-y-6 group cursor-pointer">
                         <div
@@ -233,6 +247,11 @@
                             <p class="text-sm font-medium text-emerald-950/60 dark:text-emerald-100/40 leading-relaxed">
                                 Our most sustainable option, using less than one gallon of water for the entire vehicle. Utilizing plant-based surfactants, we breakdown heavy grime while being 100% biodegradable and zero runoff. Pure perfection that respects our planet.
                             </p>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-emerald-100 dark:border-emerald-800 w-full flex justify-center">
+                            <a href="pricing.html" class="px-8 py-3 bg-emerald-500 text-emerald-950 font-black text-xs uppercase tracking-[0.2em] rounded-full shadow-lg shadow-emerald-500/20 hover:scale-110 hover:shadow-emerald-500/40 transition-all duration-300">
+                                Starting at $29
+                            </a>
                         </div>
                     </div>
                 </div>

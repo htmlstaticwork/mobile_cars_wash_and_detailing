@@ -63,7 +63,7 @@
             <div class="space-y-4">
                 <p class="text-[10px] font-black uppercase tracking-widest text-emerald-950/40 dark:text-emerald-400">Main Menu</p>
                 <nav class="space-y-2" id="sidebar-nav">
-                    <a href="#dashboard" data-section="dashboard" class="nav-link flex items-center gap-4 px-6 py-4 bg-emerald-500 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/20 active-state"><i data-lucide="layout-grid" class="w-5 h-5"></i> Dashboard</a>
+                    <a href="#dashboard" data-section="dashboard" class="nav-link flex items-center gap-4 px-6 py-4 bg-emerald-500 text-white font-bold rounded-2xl shadow-lg shadow-emerald-500/20 active-state transition-all group/nav hover:bg-emerald-50 hover:text-emerald-950 dark:hover:bg-emerald-800 dark:hover:text-white"><i data-lucide="layout-grid" class="w-5 h-5 group-hover/nav:scale-110 transition-transform"></i> Dashboard</a>
                     <a href="#bookings" data-section="bookings" class="nav-link flex items-center gap-4 px-6 py-4 text-gray-500 dark:text-emerald-100/50 hover:bg-emerald-50 hover:text-emerald-950 dark:hover:bg-emerald-800 dark:hover:text-white rounded-2xl transition-all group/nav"><i data-lucide="calendar" class="w-5 h-5 group-hover/nav:scale-110 transition-transform"></i> Bookings</a>
                     <a href="#vehicles" data-section="vehicles" class="nav-link flex items-center gap-4 px-6 py-4 text-gray-500 dark:text-emerald-100/50 hover:bg-emerald-50 hover:text-emerald-950 dark:hover:bg-emerald-800 dark:hover:text-white rounded-2xl transition-all group/nav"><i data-lucide="car" class="w-5 h-5 group-hover/nav:scale-110 transition-transform"></i> My Vehicles</a>
                     <a href="#history" data-section="history" class="nav-link flex items-center gap-4 px-6 py-4 text-gray-500 dark:text-emerald-100/50 hover:bg-emerald-50 hover:text-emerald-950 dark:hover:bg-emerald-800 dark:hover:text-white rounded-2xl transition-all group/nav"><i data-lucide="clock" class="w-5 h-5 group-hover/nav:scale-110 transition-transform"></i> History</a>
@@ -247,9 +247,9 @@
                  </div>
 
                  <!-- Add Placeholder -->
-                 <div class="p-6 border-4 border-dashed border-emerald-500/10 rounded-[2.5rem] flex flex-col items-center justify-center space-y-3 hover:border-emerald-500/30 transition-all cursor-pointer group min-h-[220px] min-w-0 overflow-hidden lg:col-span-2 2xl:col-span-1">
-                     <i data-lucide="plus-circle" class="w-10 h-10 text-emerald-100 dark:text-emerald-800 group-hover:text-emerald-500 transition-all"></i>
-                     <p class="text-xs font-black uppercase tracking-widest text-emerald-100 dark:text-emerald-800 group-hover:text-emerald-500">Register New</p>
+                 <div class="p-6 border-4 border-dashed border-emerald-500/40 bg-emerald-50/50 dark:bg-emerald-900/10 rounded-[2.5rem] flex flex-col items-center justify-center space-y-3 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 shadow-sm hover:shadow-lg shadow-emerald-500/5 transition-all cursor-pointer group min-h-[220px] min-w-0 overflow-hidden lg:col-span-2 2xl:col-span-1">
+                     <i data-lucide="plus-circle" class="w-10 h-10 text-emerald-400 dark:text-emerald-600 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-all group-hover:scale-110"></i>
+                     <p class="text-xs font-black uppercase tracking-widest text-emerald-400 dark:text-emerald-600 group-hover:text-emerald-500 dark:group-hover:text-emerald-400">Register New</p>
                  </div>
             </div>
         </section>
@@ -417,7 +417,7 @@
                 });
 
                 navLinks.forEach(l => {
-                    l.classList.remove('bg-emerald-500', 'text-white', 'active-state');
+                    l.classList.remove('bg-emerald-500', 'text-white', 'font-bold', 'shadow-lg', 'shadow-emerald-500/20', 'active-state');
                     l.classList.add('text-gray-500', 'dark:text-emerald-100/50');
                 });
 
@@ -429,7 +429,7 @@
                     targetSection.classList.add('block');
                     if (activeNav) {
                         activeNav.classList.remove('text-gray-500', 'dark:text-emerald-100/50');
-                        activeNav.classList.add('bg-emerald-500', 'text-white', 'active-state');
+                        activeNav.classList.add('bg-emerald-500', 'text-white', 'font-bold', 'shadow-lg', 'shadow-emerald-500/20', 'active-state');
                     }
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 }

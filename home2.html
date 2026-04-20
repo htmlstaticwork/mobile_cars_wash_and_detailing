@@ -35,14 +35,13 @@
     <header
         class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between relative">
-            <a href="index.html" class="flex items-center space-x-2 sm:space-x-4 group shrink-0">
+            <a href="index.html" class="flex items-center gap-3 sm:gap-4 group shrink-0">
                 <img src="assets/images/logo.png" alt="EcoShine Logo"
                     class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
-                <span
-                    class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter text-emerald-500 truncate">EcoShine</span>
+                <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-widest text-emerald-500">EcoShine</span>
             </a>
             <div
-                class="hidden xl:flex items-center space-x-8 text-sm font-black uppercase tracking-widest absolute left-1/2 transform -translate-x-1/2">
+                class="hidden xl:flex items-center gap-8 text-sm font-black uppercase tracking-widest absolute left-1/2 transform -translate-x-1/2">
                 <a href="index.html" class="hover:text-emerald-500 transition-colors whitespace-nowrap">Home 1</a>
                 <a href="home2.html" class="text-emerald-500 whitespace-nowrap">Home 2</a>
                 <a href="services.html"
@@ -53,7 +52,7 @@
                 <a href="dashboard.html"
                     class="px-4 py-1.5 bg-emerald-500 text-emerald-950 rounded-full hover:bg-emerald-400 transition-all font-black whitespace-nowrap text-[10px] uppercase tracking-widest">Dashboard</a>
             </div>
-            <div class="flex items-center space-x-1 sm:space-x-4">
+            <div class="flex items-center gap-1 sm:gap-4">
                 <button id="theme-toggle"
                     class="p-2 rounded-full hover:bg-emerald-100 dark:hover:bg-emerald-800 transition-all">
                     <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
@@ -131,7 +130,7 @@
                         class="relative z-10 w-full lg:max-h-[60vh] object-contain rounded-[3.5rem] shadow-2xl transition-all duration-700">
                     <!-- Quick Stats Overlay -->
                     <div
-                        class="absolute bottom-4 right-4 lg:-bottom-6 lg:-right-6 bg-white dark:bg-emerald-900 p-8 rounded-3xl shadow-2xl z-20 space-y-2 border border-emerald-100 dark:border-emerald-800 hover:scale-110 transition-all duration-500 cursor-pointer group/stats">
+                        class="absolute bottom-4 right-4 lg:-bottom-6 lg:-right-6 p-8 z-20 space-y-2 border-l border-emerald-500/20 hover:scale-110 transition-all duration-500 cursor-pointer group/stats">
                         <h4 class="text-3xl font-black text-emerald-500 tracking-tighter group-hover/stats:scale-110 transition-transform">99.9%</h4>
                         <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 dark:text-emerald-300">Client Satisfaction
                         </p>
@@ -179,7 +178,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                     <!-- Service 1 -->
                     <div
-                        class="p-10 md:p-16 lg:p-10 bg-white dark:bg-emerald-950 rounded-[3rem] shadow-xl border border-emerald-100 dark:border-emerald-800 space-y-8 flex flex-col justify-between group hover:border-emerald-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 text-center items-center">
+                        class="p-10 border-b lg:border-b-0 lg:border-r border-emerald-500/10 space-y-8 flex flex-col justify-between group hover:scale-105 transition-all duration-500 text-center items-center">
                         <div class="space-y-6 w-full">
                             <div
                                 class="h-32 w-full mb-6 rounded-3xl overflow-hidden shadow-inner bg-emerald-50 relative group-hover:scale-105 transition-transform duration-500">
@@ -201,7 +200,7 @@
                     </div>
                     <!-- Service 2 -->
                     <div
-                        class="p-10 md:p-16 lg:p-10 bg-emerald-500 dark:bg-emerald-500 rounded-[3rem] shadow-2xl space-y-8 flex flex-col justify-between transform scale-105 z-10 text-center items-center hover:scale-110 hover:-translate-y-4 hover:shadow-[0_40px_80px_-15px_rgba(0,185,129,0.5)] transition-all duration-500">
+                        class="p-10 bg-emerald-500/10 dark:bg-emerald-500/5 border-b lg:border-b-0 lg:border-r border-emerald-500/10 space-y-8 flex flex-col justify-between transform lg:scale-105 z-10 text-center items-center hover:scale-110 transition-all duration-500">
                         <div class="space-y-6 w-full">
                             <div
                                 class="h-32 w-full mb-6 rounded-3xl overflow-hidden shadow-inner bg-white/20 relative group-hover:scale-105 transition-transform duration-500">
@@ -209,20 +208,20 @@
                                     alt="Signature Detailing" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
                             </div>
-                            <h4 class="text-2xl font-bold uppercase italic text-emerald-950">Signature Detailing</h4>
-                            <p class="text-emerald-900 font-bold text-sm leading-relaxed">Full clay bar treatment,
+                            <h4 class="text-2xl font-bold uppercase italic text-emerald-950 dark:text-white">Signature Detailing</h4>
+                            <p class="text-emerald-900 dark:text-gray-400 font-bold text-sm leading-relaxed">Full clay bar treatment,
                                 interior sanitization, and deep leather conditioning.</p>
                         </div>
-                        <div class="flex items-center justify-center gap-8 border-t border-emerald-950/20 pt-8 w-full">
-                            <span class="text-2xl font-black text-emerald-950">$79</span>
+                        <div class="flex items-center justify-center gap-8 border-t border-emerald-950/20 dark:border-white/10 pt-8 w-full">
+                            <span class="text-2xl font-black text-emerald-950 dark:text-white">$79</span>
                             <a href="#"
-                                class="text-emerald-950 font-black uppercase text-xs tracking-widest border-b-2 border-emerald-950 pb-1">Best
+                                class="text-emerald-950 dark:text-white font-black uppercase text-xs tracking-widest border-b-2 border-emerald-950 dark:border-white pb-1">Best
                                 Choice</a>
                         </div>
                     </div>
                     <!-- Service 3 -->
                     <div
-                        class="p-10 md:p-16 lg:p-10 bg-white dark:bg-emerald-950 rounded-[3rem] shadow-xl border border-emerald-100 dark:border-emerald-800 space-y-8 flex flex-col justify-between group hover:border-emerald-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-500 md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full md:mx-auto text-center items-center">
+                        class="p-10 space-y-8 flex flex-col justify-between group hover:scale-105 transition-all duration-500 text-center items-center">
                         <div class="space-y-6 w-full">
                             <div
                                 class="h-32 w-full mb-6 rounded-3xl overflow-hidden shadow-inner bg-emerald-50 relative group-hover:scale-105 transition-transform duration-500">
@@ -277,7 +276,7 @@
         <section class="py-32 bg-emerald-50 dark:bg-emerald-950/20 px-4 md:px-16 lg:px-12 xl:px-24">
             <div class="container mx-auto">
                 <div
-                    class="bg-white dark:bg-emerald-950 rounded-[4rem] p-8 md:p-12 lg:p-14 xl:p-24 shadow-2xl border border-emerald-100 dark:border-emerald-800 flex flex-col lg:flex-row-reverse items-center justify-between gap-12 xl:gap-24 relative overflow-hidden group">
+                    class="border-y border-emerald-500/20 p-8 md:p-12 lg:p-14 xl:p-24 flex flex-col lg:flex-row-reverse items-center justify-between gap-12 xl:gap-24 relative overflow-hidden group">
                     <div class="lg:w-[55%] xl:w-7/12 space-y-8 text-center lg:text-left z-10 shrink-0">
                         <p class="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">Premium Accessory</p>
                         <h2
@@ -325,7 +324,7 @@
             </div>
             <div class="container mx-auto px-4 md:px-16 lg:px-24 relative z-10">
                 <div
-                    class="bg-emerald-50 dark:bg-emerald-950 p-12 lg:p-24 rounded-[4rem] grid lg:grid-cols-2 gap-16 items-center overflow-hidden border border-emerald-100 dark:border-emerald-800">
+                    class="p-12 lg:p-24 border-y border-emerald-500/20 grid lg:grid-cols-2 gap-16 items-center overflow-hidden">
                     <div class="space-y-8 text-left">
                         <h2 class="text-3xl md:text-5xl font-outfit font-black uppercase leading-tight italic">Shine On
                             <br><span class="text-emerald-500">Recurring.</span>
@@ -347,7 +346,7 @@
                             class="aspect-square bg-emerald-500/20 rounded-[3rem] p-12 relative flex items-center justify-center group">
                             <!-- Background image removed for cleaner look -->
                             <div
-                                class="absolute bg-white dark:bg-black p-6 md:p-8 rounded-3xl shadow-2xl border border-emerald-100 dark:border-emerald-800 w-[90%] max-w-[320px] text-left">
+                                class="p-6 md:p-8 border-l-4 border-emerald-500 text-left">
                                 <div class="flex items-center gap-4 mb-4">
                                     <img src="assets/images/marcus_thorne.png" alt="Client Avatar"
                                         class="w-10 h-10 rounded-full object-cover border-2 border-emerald-500">
@@ -383,19 +382,19 @@
         <section class="py-32 bg-white dark:bg-black">
             <div class="container mx-auto px-6">
                 <div
-                    class="bg-black dark:bg-emerald-950/20 rounded-[4rem] p-12 md:p-24 text-center space-y-8 relative overflow-hidden">
+                    class="py-12 md:py-24 text-center space-y-8 relative overflow-hidden border-t border-emerald-500/20">
                     <div
                         class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent">
                     </div>
-                    <h2 class="text-4xl md:text-7xl font-outfit font-black uppercase text-white italic leading-none">
+                    <h2 class="text-4xl md:text-7xl font-outfit font-black uppercase text-emerald-950 dark:text-white italic leading-none">
                         Ready for the<br><span class="text-emerald-500">Perfect Glow?</span></h2>
-                    <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto">Skip the line and experience the next
+                    <p class="text-emerald-950/60 dark:text-white/60 text-lg md:text-xl max-w-2xl mx-auto">Skip the line and experience the next
                         generation of mobile detailing.</p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <a href="contact.html"
                             class="flex items-center justify-center px-8 py-5 bg-emerald-500 text-emerald-950 font-black text-base md:text-xl rounded-2xl hover:scale-105 transition-all w-full md:w-auto text-center whitespace-nowrap">Book Now</a>
                         <a href="pricing.html"
-                            class="flex items-center justify-center px-8 py-5 bg-white/10 text-white border border-white/20 font-black text-base md:text-xl rounded-2xl hover:bg-white/20 transition-all w-full md:w-auto uppercase italic text-center whitespace-nowrap">View Packages</a>
+                            class="flex items-center justify-center px-8 py-5 bg-emerald-950/5 dark:bg-white/10 text-emerald-950 dark:text-white border border-emerald-950/20 dark:border-white/20 font-black text-base md:text-xl rounded-2xl hover:bg-emerald-500 hover:text-emerald-950 transition-all w-full md:w-auto uppercase italic text-center whitespace-nowrap">View Packages</a>
                     </div>
                 </div>
             </div>
@@ -413,8 +412,7 @@
                     <a href="index.html" class="flex items-center gap-4 group">
                         <img src="assets/images/logo.png" alt="EcoShine Logo"
                             class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
-                        <span
-                            class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-tighter leading-none text-emerald-500">EcoShine</span>
+                        <span class="text-2xl md:text-3xl font-outfit font-black uppercase tracking-widest text-emerald-500">EcoShine</span>
                     </a>
                     <p
                         class="text-emerald-900/60 dark:text-emerald-50/70 text-[10px] sm:text-xs font-semibold leading-relaxed max-w-xs uppercase tracking-wider">
@@ -490,7 +488,7 @@
                 </div>
             </div>
 
-            <div class="pt-8 border-t border-emerald-200 dark:border-white/5 flex justify-center items-center px-4">
+            <div class="pt-8 border-t border-emerald-200 dark:border-white/20 flex justify-center items-center px-4">
                 <p
                     class="text-[10px] font-black uppercase tracking-[0.2em] md:tracking-[0.5em] text-emerald-900/30 dark:text-white/50 italic text-center leading-loose">
                     © 2026 EcoShine. All rights reserved.
